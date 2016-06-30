@@ -12,12 +12,14 @@ class HomeViewController: UITableViewController {
     
     var objectList: [String] = ["UI Object 기본 연동 (on View)",
                                 "UI Object 기본 연동 (on Table)",
-                                "UIAlertController"
+                                "UIAlertController",
+                                "UIActivityindicatorview"
     ]
     
     var objectDesc: [String] = ["기본 Viewd에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
                                 "기본 Table에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
-                                "다양한 alert view 및 데이터 처리"
+                                "다양한 alert view 및 데이터 처리",
+                                "로딩화면에 사용되는 모달 창"
     ]
     
     override func viewDidLoad() {
@@ -58,6 +60,8 @@ class HomeViewController: UITableViewController {
             self.performSegueWithIdentifier("goObjectTable", sender: self)
         case 2:
             self.performSegueWithIdentifier("goAlertTable", sender: self)
+        case 3:
+            self.performSegueWithIdentifier("goActivityindicator", sender: self)
         // switch 문에서는 default가 필수로 지정되어야 함.
         default:
             print("#\(indexPath.row)")

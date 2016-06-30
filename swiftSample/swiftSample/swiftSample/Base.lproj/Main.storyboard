@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="nl5-jC-Uqs">
             <objects>
                 <tableViewController id="pMy-p2-WHp" customClass="HomeViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,11 +29,12 @@
                             <outlet property="delegate" destination="pMy-p2-WHp" id="AT1-ew-rJm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="r3y-Di-s0l"/>
+                    <navigationItem key="navigationItem" title="Home" id="r3y-Di-s0l"/>
                     <connections>
                         <segue destination="TIH-zK-DzU" kind="show" identifier="goObjectView" id="O2Q-pr-7m8"/>
                         <segue destination="3gk-Cp-0nz" kind="show" identifier="goObjectTable" id="gw1-59-LJ9"/>
-                        <segue destination="tk1-HR-4tq" kind="show" id="wb9-eZ-OSD"/>
+                        <segue destination="tk1-HR-4tq" kind="show" identifier="goAlertTable" id="wb9-eZ-OSD"/>
+                        <segue destination="wLh-Rt-iew" kind="show" identifier="goActivityindicator" id="Z1U-LM-SxW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGs-3H-f7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -341,6 +342,138 @@
             </objects>
             <point key="canvasLocation" x="1342" y="1137"/>
         </scene>
+        <!--Activity Table Controller-->
+        <scene sceneID="IYm-F7-ktQ">
+            <objects>
+                <tableViewController id="wLh-Rt-iew" customClass="ActivityTableController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uXX-kv-IZg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityindicatorListCell" id="zJ9-XD-Uza">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zJ9-XD-Uza" id="QDj-f0-OW5">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wLh-Rt-iew" id="PGH-iX-fpr"/>
+                            <outlet property="delegate" destination="wLh-Rt-iew" id="beL-sa-J8T"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="1Gh-3d-GFu" kind="show" identifier="goActivityindicaterView1" id="wve-tV-CMm"/>
+                        <segue destination="Fh8-o2-MuB" kind="show" identifier="goActivityindicaterView2" id="E1h-ll-acF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQG-Ib-1hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342" y="2631"/>
+        </scene>
+        <!--Activity Indicator View Controller1-->
+        <scene sceneID="lBU-lI-z3N">
+            <objects>
+                <viewController id="1Gh-3d-GFu" customClass="ActivityIndicatorViewController1" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ew9-z6-55w"/>
+                        <viewControllerLayoutGuide type="bottom" id="PW6-bg-6Gh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Myp-ja-uni">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcN-vK-7tV">
+                                <rect key="frame" x="20" y="529" width="75" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startActivityIndicator:" destination="1Gh-3d-GFu" eventType="touchUpInside" id="Lo0-U9-uFr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Li6-FY-jWd">
+                                <rect key="frame" x="522" y="529" width="58" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="End"/>
+                                <connections>
+                                    <action selector="stopActivityIndicator:" destination="1Gh-3d-GFu" eventType="touchUpInside" id="oHA-eF-9cL"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sfp-yg-Bh0">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sfp-yg-Bh0" firstAttribute="centerX" secondItem="Myp-ja-uni" secondAttribute="centerX" id="7Yn-7r-bp3"/>
+                            <constraint firstItem="PW6-bg-6Gh" firstAttribute="top" secondItem="QcN-vK-7tV" secondAttribute="bottom" constant="20" id="Lkc-kJ-MEI"/>
+                            <constraint firstItem="sfp-yg-Bh0" firstAttribute="centerY" secondItem="Myp-ja-uni" secondAttribute="centerY" id="N4m-8J-iGN"/>
+                            <constraint firstItem="Li6-FY-jWd" firstAttribute="trailing" secondItem="Myp-ja-uni" secondAttribute="trailingMargin" id="NEb-lO-JB0"/>
+                            <constraint firstItem="PW6-bg-6Gh" firstAttribute="top" secondItem="Li6-FY-jWd" secondAttribute="bottom" constant="20" id="hx0-zi-V58"/>
+                            <constraint firstItem="QcN-vK-7tV" firstAttribute="leading" secondItem="Myp-ja-uni" secondAttribute="leadingMargin" id="qEF-rc-Q1p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="sfp-yg-Bh0" id="4f7-cr-gtH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQn-xR-0om" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="2631"/>
+        </scene>
+        <!--Activity Indicator View Controller2-->
+        <scene sceneID="aXJ-Qk-Mvc">
+            <objects>
+                <viewController id="Fh8-o2-MuB" customClass="ActivityIndicatorViewController2" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gHQ-5Y-Tku"/>
+                        <viewControllerLayoutGuide type="bottom" id="9It-5w-FEt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AHn-jW-ocC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgSample1.png" translatesAutoresizingMaskIntoConstraints="NO" id="mBP-Oi-lLp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFA-82-m60">
+                                <rect key="frame" x="20" y="529" width="75" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startActivityIndicator:" destination="Fh8-o2-MuB" eventType="touchUpInside" id="E0W-xj-AE7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ma-sQ-b9e">
+                                <rect key="frame" x="522" y="529" width="58" height="51"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="End"/>
+                                <connections>
+                                    <action selector="endActivityIndicator:" destination="Fh8-o2-MuB" eventType="touchUpInside" id="pHO-bu-HaL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9It-5w-FEt" firstAttribute="top" secondItem="lFA-82-m60" secondAttribute="bottom" constant="20" id="4G7-H2-fm0"/>
+                            <constraint firstItem="lFA-82-m60" firstAttribute="leading" secondItem="AHn-jW-ocC" secondAttribute="leadingMargin" id="HKn-tH-rQY"/>
+                            <constraint firstItem="mBP-Oi-lLp" firstAttribute="leading" secondItem="AHn-jW-ocC" secondAttribute="leadingMargin" constant="-20" id="MBE-6u-PAk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mBP-Oi-lLp" secondAttribute="trailing" constant="-20" id="PZP-1X-MJg"/>
+                            <constraint firstItem="9It-5w-FEt" firstAttribute="top" secondItem="mBP-Oi-lLp" secondAttribute="bottom" id="hH7-QL-gw2"/>
+                            <constraint firstItem="mBP-Oi-lLp" firstAttribute="top" secondItem="AHn-jW-ocC" secondAttribute="topMargin" id="pf4-8Q-fM4"/>
+                            <constraint firstItem="9It-5w-FEt" firstAttribute="top" secondItem="4Ma-sQ-b9e" secondAttribute="bottom" constant="20" id="yo1-mr-JWR"/>
+                            <constraint firstItem="4Ma-sQ-b9e" firstAttribute="trailing" secondItem="AHn-jW-ocC" secondAttribute="trailingMargin" id="zPD-aL-KQm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D21-0c-h8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="3346"/>
+        </scene>
         <!--Alert View Controller-->
         <scene sceneID="mBB-jz-3ar">
             <objects>
@@ -350,7 +483,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AMB-IR-Qkj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertListCell" id="AMB-IR-Qkj">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AMB-IR-Qkj" id="XOy-Ew-Fxk">
@@ -516,4 +649,7 @@
             <point key="canvasLocation" x="-188" y="1137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgSample1.png" width="168" height="300"/>
+    </resources>
 </document>
