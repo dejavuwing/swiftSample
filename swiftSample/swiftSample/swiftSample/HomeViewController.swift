@@ -8,18 +8,25 @@
 
 import UIKit
 
-class HomeViewController: UITableViewController {
+class HomeViewController: UITableViewController
+{
     
     var objectList: [String] = ["UI Object 기본 연동 (on View)",
                                 "UI Object 기본 연동 (on Table)",
                                 "UIAlertController",
-                                "UIActivityindicatorview"
+                                "UIActivityindicatorview",
+                                "UIPicketView ",
+                                "Table View 다루기",
+                                "Web View 다루기"
     ]
     
     var objectDesc: [String] = ["기본 Viewd에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
                                 "기본 Table에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
                                 "다양한 alert view 및 데이터 처리",
-                                "로딩화면에 사용되는 모달 창"
+                                "로딩화면에 사용되는 모달 창",
+                                "Pickket View",
+                                "여러가지 Table View",
+                                "여러가지 Web View"
     ]
     
     override func viewDidLoad() {
@@ -62,6 +69,12 @@ class HomeViewController: UITableViewController {
             self.performSegueWithIdentifier("goAlertTable", sender: self)
         case 3:
             self.performSegueWithIdentifier("goActivityindicator", sender: self)
+        case 4:
+            self.performSegueWithIdentifier("goPickerTable", sender: self)
+        case 5:
+            self.performSegueWithIdentifier("goTableView", sender: self)
+        case 6:
+            self.performSegueWithIdentifier("goWebView", sender: self)
         // switch 문에서는 default가 필수로 지정되어야 함.
         default:
             print("#\(indexPath.row)")

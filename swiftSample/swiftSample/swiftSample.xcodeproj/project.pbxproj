@@ -17,6 +17,13 @@
 		E33C29731D24D41D00FD6A10 /* ObjectViewResultcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C29721D24D41D00FD6A10 /* ObjectViewResultcontroller.swift */; };
 		E33C29751D24D8AF00FD6A10 /* ObjectTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C29741D24D8AF00FD6A10 /* ObjectTableController.swift */; };
 		E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C29761D24D9B100FD6A10 /* AlertTableController.swift */; };
+		E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */; };
+		E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */; };
+		E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */; };
+		E39122B11D2A64F800F436F7 /* FormattingPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B01D2A64F800F436F7 /* FormattingPickerViewController.swift */; };
+		E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B21D2A823100F436F7 /* DefaultDatePickerViewController.swift */; };
+		E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */; };
+		E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */; };
 		E3AE89A11D24DE44000AF808 /* ActivityTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */; };
 		E3AE89A31D24E177000AF808 /* ActivityIndicatorViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */; };
 		E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */; };
@@ -40,6 +47,13 @@
 		E33C29721D24D41D00FD6A10 /* ObjectViewResultcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectViewResultcontroller.swift; path = ../ObjectViewResultcontroller.swift; sourceTree = "<group>"; };
 		E33C29741D24D8AF00FD6A10 /* ObjectTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectTableController.swift; path = ../ObjectTableController.swift; sourceTree = "<group>"; };
 		E33C29761D24D9B100FD6A10 /* AlertTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertTableController.swift; path = ../AlertTableController.swift; sourceTree = "<group>"; };
+		E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTableController.swift; path = ../PickerTableController.swift; sourceTree = "<group>"; };
+		E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultPickerViewController.swift; path = ../DefaultPickerViewController.swift; sourceTree = "<group>"; };
+		E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PizzaPickerViewController.swift; path = ../PizzaPickerViewController.swift; sourceTree = "<group>"; };
+		E39122B01D2A64F800F436F7 /* FormattingPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormattingPickerViewController.swift; path = ../FormattingPickerViewController.swift; sourceTree = "<group>"; };
+		E39122B21D2A823100F436F7 /* DefaultDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultDatePickerViewController.swift; path = ../DefaultDatePickerViewController.swift; sourceTree = "<group>"; };
+		E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliveryDatePickerViewController.swift; path = ../DeliveryDatePickerViewController.swift; sourceTree = "<group>"; };
+		E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewTableController.swift; path = ../WebViewTableController.swift; sourceTree = "<group>"; };
 		E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityTableController.swift; path = ../ActivityTableController.swift; sourceTree = "<group>"; };
 		E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorViewController1.swift; path = ../ActivityIndicatorViewController1.swift; sourceTree = "<group>"; };
 		E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorViewController2.swift; path = ../ActivityIndicatorViewController2.swift; sourceTree = "<group>"; };
@@ -47,7 +61,7 @@
 		E3AE89A91D24F11A000AF808 /* bgSample4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgSample4.jpeg; sourceTree = "<group>"; };
 		E3AE89AA1D24F11A000AF808 /* bgSample3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgSample3.jpeg; sourceTree = "<group>"; };
 		E3AE89AB1D24F11A000AF808 /* bgSample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSample2.png; sourceTree = "<group>"; };
-		E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView.swift; sourceTree = "<group>"; };
+		E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityModalView.swift; path = ../ActivityModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +78,6 @@
 		E33C294F1D24C07300FD6A10 = {
 			isa = PBXGroup;
 			children = (
-				E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */,
 				E33C295A1D24C07300FD6A10 /* swiftSample */,
 				E33C29591D24C07300FD6A10 /* Products */,
 				E3AE89A61D24F0DC000AF808 /* Assets */,
@@ -84,13 +97,19 @@
 			children = (
 				E33C295B1D24C07300FD6A10 /* AppDelegate.swift */,
 				E33C295D1D24C07300FD6A10 /* HomeViewController.swift */,
-				E33C29701D24D0FA00FD6A10 /* ObjectViewController.swift */,
-				E33C29721D24D41D00FD6A10 /* ObjectViewResultcontroller.swift */,
-				E33C29741D24D8AF00FD6A10 /* ObjectTableController.swift */,
-				E33C29761D24D9B100FD6A10 /* AlertTableController.swift */,
+				E39122B61D2A994C00F436F7 /* ObjectView */,
+				E39122B71D2A99C600F436F7 /* WebView */,
 				E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */,
+				E33C29761D24D9B100FD6A10 /* AlertTableController.swift */,
 				E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */,
 				E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */,
+				E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */,
+				E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */,
+				E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */,
+				E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */,
+				E39122B01D2A64F800F436F7 /* FormattingPickerViewController.swift */,
+				E39122B21D2A823100F436F7 /* DefaultDatePickerViewController.swift */,
+				E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */,
 				E33C295F1D24C07300FD6A10 /* Main.storyboard */,
 				E33C29651D24C07300FD6A10 /* Assets.xcassets */,
 				E33C29671D24C07300FD6A10 /* LaunchScreen.storyboard */,
@@ -98,6 +117,24 @@
 				E33C29621D24C07300FD6A10 /* swiftSample.xcdatamodeld */,
 			);
 			path = swiftSample;
+			sourceTree = "<group>";
+		};
+		E39122B61D2A994C00F436F7 /* ObjectView */ = {
+			isa = PBXGroup;
+			children = (
+				E33C29701D24D0FA00FD6A10 /* ObjectViewController.swift */,
+				E33C29721D24D41D00FD6A10 /* ObjectViewResultcontroller.swift */,
+				E33C29741D24D8AF00FD6A10 /* ObjectTableController.swift */,
+			);
+			name = ObjectView;
+			sourceTree = "<group>";
+		};
+		E39122B71D2A99C600F436F7 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */,
+			);
+			name = WebView;
 			sourceTree = "<group>";
 		};
 		E3AE89A61D24F0DC000AF808 /* Assets */ = {
@@ -186,17 +223,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
 				E3AE89A31D24E177000AF808 /* ActivityIndicatorViewController1.swift in Sources */,
 				E33C29641D24C07300FD6A10 /* swiftSample.xcdatamodeld in Sources */,
+				E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */,
+				E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */,
 				E3AE89A11D24DE44000AF808 /* ActivityTableController.swift in Sources */,
 				E3AE89B01D24F29B000AF808 /* ActivityModalView.swift in Sources */,
+				E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */,
 				E33C29731D24D41D00FD6A10 /* ObjectViewResultcontroller.swift in Sources */,
 				E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */,
 				E33C29751D24D8AF00FD6A10 /* ObjectTableController.swift in Sources */,
+				E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */,
 				E33C295C1D24C07300FD6A10 /* AppDelegate.swift in Sources */,
+				E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */,
 				E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */,
 				E33C29711D24D0FA00FD6A10 /* ObjectViewController.swift in Sources */,
+				E39122B11D2A64F800F436F7 /* FormattingPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
