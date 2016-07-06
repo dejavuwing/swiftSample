@@ -11,7 +11,8 @@ import UIKit
 class ActivityTableController: UITableViewController {
     
     var activityList: [String] = ["기본 로딩 창",
-                               "customized activity indicator with function"
+                               "customized activity indicator with function",
+                               "5초 후 로딩 이미지 닫힘."
     ]
     
     override func viewDidLoad() {
@@ -41,6 +42,8 @@ class ActivityTableController: UITableViewController {
             self.performSegueWithIdentifier("goActivityindicaterView1", sender: self)
         case 1:
             self.performSegueWithIdentifier("goActivityindicaterView2", sender: self)
+        case 2:
+            self.performSegueWithIdentifier("goActivityIndicaterView3", sender: self)
         default:
             return
         }

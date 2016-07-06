@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E32901741D2B9FC3007BCA10 /* TableViewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901731D2B9FC3007BCA10 /* TableViewTableController.swift */; };
+		E32901761D2BA15E007BCA10 /* JsonTable1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901751D2BA15E007BCA10 /* JsonTable1Controller.swift */; };
+		E32901781D2BB134007BCA10 /* JsonTable2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */; };
+		E329017C1D2C86F9007BCA10 /* ActivityModalView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329017B1D2C86F9007BCA10 /* ActivityModalView2.swift */; };
+		E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329017D1D2C9754007BCA10 /* ActivityModalView1.swift */; };
+		E32901801D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329017F1D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift */; };
 		E33C295C1D24C07300FD6A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C295B1D24C07300FD6A10 /* AppDelegate.swift */; };
 		E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C295D1D24C07300FD6A10 /* HomeViewController.swift */; };
 		E33C29611D24C07300FD6A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C295F1D24C07300FD6A10 /* Main.storyboard */; };
@@ -35,6 +41,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E32901731D2B9FC3007BCA10 /* TableViewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTableController.swift; sourceTree = "<group>"; };
+		E32901751D2BA15E007BCA10 /* JsonTable1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTable1Controller.swift; sourceTree = "<group>"; };
+		E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTable2Controller.swift; sourceTree = "<group>"; };
+		E329017B1D2C86F9007BCA10 /* ActivityModalView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView2.swift; sourceTree = "<group>"; };
+		E329017D1D2C9754007BCA10 /* ActivityModalView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView1.swift; sourceTree = "<group>"; };
+		E329017F1D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController3.swift; sourceTree = "<group>"; };
 		E33C29581D24C07300FD6A10 /* swiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33C295B1D24C07300FD6A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E33C295D1D24C07300FD6A10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +87,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32901721D2B9F72007BCA10 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E32901731D2B9FC3007BCA10 /* TableViewTableController.swift */,
+				E32901751D2BA15E007BCA10 /* JsonTable1Controller.swift */,
+				E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		E32901791D2BBCCC007BCA10 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */,
+				E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */,
+				E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */,
+				E329017F1D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift */,
+			);
+			name = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		E329017A1D2C82EF007BCA10 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E33C29761D24D9B100FD6A10 /* AlertTableController.swift */,
+			);
+			name = AlertView;
+			sourceTree = "<group>";
+		};
 		E33C294F1D24C07300FD6A10 = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +138,14 @@
 			children = (
 				E33C295B1D24C07300FD6A10 /* AppDelegate.swift */,
 				E33C295D1D24C07300FD6A10 /* HomeViewController.swift */,
+				E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */,
+				E329017D1D2C9754007BCA10 /* ActivityModalView1.swift */,
+				E329017B1D2C86F9007BCA10 /* ActivityModalView2.swift */,
+				E329017A1D2C82EF007BCA10 /* AlertView */,
 				E39122B61D2A994C00F436F7 /* ObjectView */,
 				E39122B71D2A99C600F436F7 /* WebView */,
-				E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */,
-				E33C29761D24D9B100FD6A10 /* AlertTableController.swift */,
-				E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */,
-				E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */,
-				E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */,
+				E32901721D2B9F72007BCA10 /* TableView */,
+				E32901791D2BBCCC007BCA10 /* ActivityIndicator */,
 				E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */,
 				E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */,
 				E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */,
@@ -224,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */,
+				E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
 				E3AE89A31D24E177000AF808 /* ActivityIndicatorViewController1.swift in Sources */,
+				E32901781D2BB134007BCA10 /* JsonTable2Controller.swift in Sources */,
 				E33C29641D24C07300FD6A10 /* swiftSample.xcdatamodeld in Sources */,
 				E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */,
 				E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */,
@@ -233,12 +277,16 @@
 				E3AE89B01D24F29B000AF808 /* ActivityModalView.swift in Sources */,
 				E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */,
 				E33C29731D24D41D00FD6A10 /* ObjectViewResultcontroller.swift in Sources */,
+				E32901741D2B9FC3007BCA10 /* TableViewTableController.swift in Sources */,
 				E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */,
 				E33C29751D24D8AF00FD6A10 /* ObjectTableController.swift in Sources */,
 				E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */,
 				E33C295C1D24C07300FD6A10 /* AppDelegate.swift in Sources */,
+				E329017C1D2C86F9007BCA10 /* ActivityModalView2.swift in Sources */,
 				E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */,
+				E32901761D2BA15E007BCA10 /* JsonTable1Controller.swift in Sources */,
 				E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */,
+				E32901801D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift in Sources */,
 				E33C29711D24D0FA00FD6A10 /* ObjectViewController.swift in Sources */,
 				E39122B11D2A64F800F436F7 /* FormattingPickerViewController.swift in Sources */,
 			);

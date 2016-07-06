@@ -22,7 +22,6 @@ class ActivityIndicatorViewController2: UIViewController {
     
     
     @IBAction func startActivityIndicator(sender: UIButton) {
-        
         ActivityModalView().showActivityIndicator(self.view)
     }
     

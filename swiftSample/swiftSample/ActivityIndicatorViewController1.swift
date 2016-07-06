@@ -28,12 +28,10 @@ class ActivityIndicatorViewController1: UIViewController {
 
 
     @IBAction func startActivityIndicator(sender: UIButton) {
-        
         activityIndicator.startAnimating()
     }
 
     @IBAction func stopActivityIndicator(sender: UIButton) {
-        
         activityIndicator.stopAnimating()
     }
 

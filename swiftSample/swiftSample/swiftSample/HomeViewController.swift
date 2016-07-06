@@ -32,6 +32,9 @@ class HomeViewController: UITableViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let rowToselect: NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
+        self.tableView.selectRowAtIndexPath(rowToselect, animated: true, scrollPosition: UITableViewScrollPosition.None)
     }
     
     override func didReceiveMemoryWarning() {
