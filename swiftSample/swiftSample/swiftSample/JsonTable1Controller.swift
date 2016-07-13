@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 // Main.storyboard에서 Table View를 View Controller에 dataSource, delegate를 Outlets로 연결한다.
-class JsonTable1Controller: UIViewController, UITableViewDataSource, UITableViewDelegate
-{
+class JsonTable1Controller: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var redditListTableView: UITableView!
     
@@ -21,7 +20,10 @@ class JsonTable1Controller: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         // 로딩 이미지를 노출시킨다.
-        ActivityModalView1.shared.showActivityIndicator(view)
+        ActivityModalView.shared.showActivityIndicator(self.view)
+        // ActivityModalView1.shared.showActivityIndicator(view)
+        // ActivityModalview2.shared.showActivityIndicator(self.view)
+        
         getRedditJson("http://www.reddit.com/.json")
         
     }
@@ -37,19 +39,15 @@ class JsonTable1Controller: UIViewController, UITableViewDataSource, UITableView
         
         
         let networkTask = mySession.dataTaskWithURL(url) { (data, response, error) -> Void in
-            if error != nil
-            {
+            if error != nil {
                 print("Fetch Failed: \(error?.localizedDescription)")
             }
-            else
-            {
-                if let data = data
-                {
-                    do
-                    {
+            else {
+                if let data = data {
+                    do {
                         let theJSON = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! NSMutableDictionary
-                        if theJSON.count > 0
-                        {
+                        
+                        if theJSON.count > 0 {
                             let results: NSArray = theJSON["data"]!["children"] as! NSArray
                             dispatch_async(dispatch_get_main_queue(), {
                                 self.tableData = results
@@ -57,13 +55,9 @@ class JsonTable1Controller: UIViewController, UITableViewDataSource, UITableView
                             })
                         }
                     }
-                    catch
-                    {
-                        
-                    }
+                    catch {}
                 }
             }
-        
         }
 
         networkTask.resume()
@@ -81,7 +75,9 @@ class JsonTable1Controller: UIViewController, UITableViewDataSource, UITableView
         cell.detailTextLabel?.text = redditEntry["data"]!["author"] as? String
         
         // Cell을 보여주기 전에 로딩 이미지를 닫느다.
-        ActivityModalView1.shared.hideActivityIndicator()
+        ActivityModalView.shared.hideActivityIndicator()
+        // ActivityModalView1.shared.hideActivityIndicator()
+        // ActivityModalview2.shared.hideActivityIndicator()
         
         return cell
     }

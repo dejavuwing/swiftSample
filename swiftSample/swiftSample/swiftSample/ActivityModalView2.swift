@@ -9,27 +9,49 @@
 import Foundation
 import UIKit
 
-class ActivityModalview2: UIViewController
-{
+public class ActivityModalview2 {
+    
+    var containerView: UIView = UIView()
+    var loadingView: UIView = UIView()
+    let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
+    public class var shared: ActivityModalview2
+    {
+        struct Static
+        {
+            static let instance: ActivityModalview2 = ActivityModalview2()
+        }
+        return Static.instance
+    }
+
+    /*
+     Define UIColor from hex value
+     
+     @param rgbValue - hex color value
+     @param alpha = transparency level
+     */
+    func UIColorFromHex(rgbValue: UInt32, alpha: Double=1.0) -> UIColor
+    {
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red: red, green: green, blue: blue, alpha: CGFloat(alpha))
+    }
     /**
      
      // Functions for showing activity indicator with text
      @param uiView – shows activity indicator in this view
      **/
-    func showActivityIndicator(uiView: UIView) -> UIView{
-        let container: UIView = UIView()
+    func showActivityIndicator(uiView: UIView) {
         
-        // Container view for adding an activity indicator view
-        let loadingView: UIView = UIView()
-        let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-        
-        container.frame = CGRectMake(0.0, 0.0, uiView.frame.size.width, 1400); // size for containerview
-        container.clipsToBounds = true
-        container.backgroundColor = UIColor.whiteColor() // style for container view
+        containerView.frame = CGRectMake(0.0, 0.0, uiView.frame.size.width, 1400); // size for containerview
+        containerView.clipsToBounds = true
+        containerView.backgroundColor = UIColorFromHex(0xffffff, alpha: 0.3) // style for container view
         
         loadingView.frame = CGRectMake(0, 0, 300, 50)
         loadingView.center = uiView.center
-        loadingView.backgroundColor = UIColor.redColor()
+        loadingView.backgroundColor = UIColorFromHex(0x444444, alpha: 0.7)
         loadingView.clipsToBounds = true
         loadingView.layer.cornerRadius = 15
         
@@ -43,10 +65,9 @@ class ActivityModalview2: UIViewController
         loadingView.addSubview(loadingLabel)
         loadingLabel.text = "Loading…" // text for label
         
-        container.addSubview(loadingView)
-        uiView.addSubview(container)
+        containerView.addSubview(loadingView)
+        uiView.addSubview(containerView)
         activityIndicator.startAnimating()
-        return container
     }
     
     /**
@@ -55,9 +76,9 @@ class ActivityModalview2: UIViewController
      */
     // Functions for activity indicator
     
-    func hideActivityIndicator( container: UIView) {
-        // activityIndicator.stopAnimating()
-        container.removeFromSuperview()
+    func hideActivityIndicator() {
+        activityIndicator.stopAnimating()
+        containerView.removeFromSuperview()
     }
     
 }

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Foundation
 import UIKit
 
 public class ActivityModalView1 {
@@ -68,10 +67,10 @@ public class ActivityModalView1 {
     }
     
     //// In order to show the activity indicator, call the function from your view controller
-    //// ActivityModalView().showActivityIndicator(self.view)
+    //// ActivityModalView1.shared.showActivityIndicator(view)
     
     //// In order to hide the activity indicator, call the function from your view controller
-    //// ActivityModalView().hideActivityIndicator(self.view)
+    //// ActivityModalView1.shared.hideActivityIndicator()
     
 }
 

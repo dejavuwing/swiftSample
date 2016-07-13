@@ -17,7 +17,8 @@ class HomeViewController: UITableViewController
                                 "UIActivityindicatorview",
                                 "UIPicketView ",
                                 "Table View 다루기",
-                                "Web View 다루기"
+                                "Web View 다루기",
+                                "Image Picker"
     ]
     
     var objectDesc: [String] = ["기본 Viewd에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
@@ -26,7 +27,8 @@ class HomeViewController: UITableViewController
                                 "로딩화면에 사용되는 모달 창",
                                 "Pickket View",
                                 "여러가지 Table View",
-                                "여러가지 Web View"
+                                "여러가지 Web View",
+                                "이미지 다루기"
     ]
     
     override func viewDidLoad() {
@@ -78,7 +80,8 @@ class HomeViewController: UITableViewController
             self.performSegueWithIdentifier("goTableView", sender: self)
         case 6:
             self.performSegueWithIdentifier("goWebView", sender: self)
-        // switch 문에서는 default가 필수로 지정되어야 함.
+        case 7:
+            self.performSegueWithIdentifier("goImagePicker", sender: self)
         default:
             print("#\(indexPath.row)")
             return

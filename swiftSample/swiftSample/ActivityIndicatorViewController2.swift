@@ -22,12 +22,12 @@ class ActivityIndicatorViewController2: UIViewController {
     
     
     @IBAction func startActivityIndicator(sender: UIButton) {
-        ActivityModalView().showActivityIndicator(self.view)
+        ActivityModalView.shared.showActivityIndicator(self.view)
     }
     
     
     @IBAction func endActivityIndicator(sender: UIButton) {
-        ActivityModalView().hideActivityIndicator(self.view)
+        ActivityModalView.shared.hideActivityIndicator()
         
     }
     

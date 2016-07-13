@@ -9,11 +9,21 @@
 import Foundation
 import UIKit
 
-class ActivityModalView {
+public class ActivityModalView {
     
     var containerView: UIView = UIView()
     var loadingView: UIView = UIView()
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
+    public class var shared: ActivityModalView
+    {
+        struct Static
+        {
+            static let instance: ActivityModalView = ActivityModalView()
+        }
+        return Static.instance
+    }
+
     
     /*
      Define UIColor from hex value
@@ -65,7 +75,7 @@ class ActivityModalView {
      
      @param uiView = remove activity indicator from this view
      */
-    func hideActivityIndicator(view: UIView)
+    func hideActivityIndicator()
     {
         activityIndicator.stopAnimating()
         containerView.removeFromSuperview()
