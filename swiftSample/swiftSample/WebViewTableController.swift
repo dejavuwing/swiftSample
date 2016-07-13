@@ -11,10 +11,14 @@ import UIKit
 
 class WebViewTableController: UITableViewController
 {
-    var webViewList: [String] = ["기본 Web View 구현"
+    var webViewList: [String] = ["기본 Web View 구현",
+                                 "내부 HTML 파일 불러오기",
+                                 "웹 뷰 네이게이션"
     ]
     
-    var webViewDesc: [String] = ["web view"
+    var webViewDesc: [String] = ["웹 불러오기 (기본)",
+                                 "내부 home.html  파일 웹 뷰 구형",
+                                 "goBack, goForward, reload, stopLoading"
     ]
     
     override func viewDidLoad() {
@@ -48,6 +52,10 @@ class WebViewTableController: UITableViewController
         {
         case 0:
             self.performSegueWithIdentifier("goDefaultWebView", sender: self)
+        case 1:
+            self.performSegueWithIdentifier("goHtmlFileWebView", sender: self)
+        case 2:
+            self.performSegueWithIdentifier("goNaviWebView", sender: self)
         default:
             print("#\(indexPath.row)")
             return

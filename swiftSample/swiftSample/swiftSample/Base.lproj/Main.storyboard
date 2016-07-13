@@ -69,6 +69,8 @@
                     </tableView>
                     <connections>
                         <segue destination="NpY-Ch-M8e" kind="show" identifier="goJsonTable1" id="Glp-36-QVF"/>
+                        <segue destination="uUm-aT-wbe" kind="show" identifier="goJsonTable2" id="aE4-7n-jxZ"/>
+                        <segue destination="Xf3-Jv-9r9" kind="show" identifier="goTableSwipe2" id="NWj-Mb-VEz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fR-3F-GS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,16 +102,18 @@
                     </tableView>
                     <connections>
                         <segue destination="aOe-0Z-rBi" kind="show" identifier="goDefaultWebView" id="qDc-e8-4sf"/>
+                        <segue destination="Yqk-DJ-bno" kind="show" identifier="goHtmlFileWebView" id="Chq-iZ-L6R"/>
+                        <segue destination="qZH-qH-Gi7" kind="show" identifier="goNaviWebView" id="1EP-rC-voF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLV-f4-Ntb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1346" y="-943"/>
         </scene>
-        <!--View Controller-->
+        <!--Default Web View Controller-->
         <scene sceneID="bf9-LJ-q5q">
             <objects>
-                <viewController id="aOe-0Z-rBi" sceneMemberID="viewController">
+                <viewController id="aOe-0Z-rBi" customClass="DefaultWebViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ACk-xu-xIa"/>
                         <viewControllerLayoutGuide type="bottom" id="76s-KM-xNH"/>
@@ -119,22 +123,109 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpx-Py-9f4">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MV-PX-263">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="refresh" id="Pu8-xU-yDu">
+                                        <connections>
+                                            <action selector="doRefresh:" destination="aOe-0Z-rBi" id="hk6-GO-5Xc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="4W2-k8-dTy"/>
+                                    <barButtonItem systemItem="stop" id="3Mc-0f-ciD">
+                                        <connections>
+                                            <action selector="stop:" destination="aOe-0Z-rBi" id="eVM-DU-Id0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EVo-hm-ezn"/>
+                                    <barButtonItem systemItem="rewind" id="P5f-KO-0ur">
+                                        <connections>
+                                            <action selector="goForward:" destination="aOe-0Z-rBi" id="ktk-5U-yx2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Uli-cq-0hj"/>
+                                    <barButtonItem systemItem="fastForward" id="RIQ-Of-Lf2">
+                                        <connections>
+                                            <action selector="goBack:" destination="aOe-0Z-rBi" id="sie-gc-gbM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bpx-Py-9f4" firstAttribute="leading" secondItem="0MV-PX-263" secondAttribute="leading" id="FnU-dX-Ee5"/>
+                            <constraint firstItem="Bpx-Py-9f4" firstAttribute="leading" secondItem="5N7-O5-ROc" secondAttribute="leading" id="PII-6q-uzZ"/>
+                            <constraint firstItem="Bpx-Py-9f4" firstAttribute="bottom" secondItem="76s-KM-xNH" secondAttribute="top" id="R4K-dI-07F"/>
+                            <constraint firstItem="Bpx-Py-9f4" firstAttribute="top" secondItem="5N7-O5-ROc" secondAttribute="top" id="XNk-be-H1t"/>
+                            <constraint firstItem="76s-KM-xNH" firstAttribute="top" secondItem="0MV-PX-263" secondAttribute="bottom" id="XcN-0B-NgJ"/>
+                            <constraint firstItem="Bpx-Py-9f4" firstAttribute="trailing" secondItem="0MV-PX-263" secondAttribute="trailing" id="gw0-UZ-ewi"/>
+                            <constraint firstAttribute="trailing" secondItem="Bpx-Py-9f4" secondAttribute="trailing" id="hqY-aw-MDU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myWebView" destination="Bpx-Py-9f4" id="4yc-M7-oGf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khb-LY-zUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="-943"/>
+        </scene>
+        <!--Html File Web View Controller-->
+        <scene sceneID="VT8-r2-XXt">
+            <objects>
+                <viewController id="Yqk-DJ-bno" customClass="HtmlFileWebViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jp4-yb-cVV"/>
+                        <viewControllerLayoutGuide type="bottom" id="7E4-Kw-um0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QXT-cD-biF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9m-YV-omY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bpx-Py-9f4" firstAttribute="top" secondItem="5N7-O5-ROc" secondAttribute="topMargin" constant="20" id="2sS-ub-6ku"/>
-                            <constraint firstItem="Bpx-Py-9f4" firstAttribute="leading" secondItem="5N7-O5-ROc" secondAttribute="leadingMargin" id="FkM-4J-FrZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Bpx-Py-9f4" secondAttribute="trailing" id="Vte-bb-wO4"/>
-                            <constraint firstItem="76s-KM-xNH" firstAttribute="top" secondItem="Bpx-Py-9f4" secondAttribute="bottom" id="sZV-3l-eje"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r9m-YV-omY" secondAttribute="trailing" constant="-20" id="0iJ-Yu-Iql"/>
+                            <constraint firstItem="7E4-Kw-um0" firstAttribute="top" secondItem="r9m-YV-omY" secondAttribute="bottom" id="eIY-TZ-kNx"/>
+                            <constraint firstItem="r9m-YV-omY" firstAttribute="top" secondItem="Jp4-yb-cVV" secondAttribute="bottom" constant="-64" id="gs4-n8-0E5"/>
+                            <constraint firstItem="r9m-YV-omY" firstAttribute="top" secondItem="QXT-cD-biF" secondAttribute="topMargin" id="jmF-et-dSN"/>
+                            <constraint firstItem="r9m-YV-omY" firstAttribute="leading" secondItem="QXT-cD-biF" secondAttribute="leadingMargin" constant="-20" id="mKE-59-lLF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="r9m-YV-omY" secondAttribute="bottom" id="nn5-sR-boQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myWebView" destination="r9m-YV-omY" id="wnK-J3-60q"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="khb-LY-zUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XcA-93-tAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2090" y="-943"/>
+            <point key="canvasLocation" x="2887" y="-1158"/>
+        </scene>
+        <!--Navigation Web View Controller-->
+        <scene sceneID="Hfg-yI-s5E">
+            <objects>
+                <viewController id="qZH-qH-Gi7" customClass="NavigationWebViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rVW-in-1I4"/>
+                        <viewControllerLayoutGuide type="bottom" id="ShV-y4-GmN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mew-t8-ZAe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ca8-Rf-Cao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3269" y="-827"/>
         </scene>
         <!--Json Table1 Controller-->
         <scene sceneID="nMF-GR-W0t">
@@ -172,6 +263,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9k-2A-a9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2090" y="-261"/>
+        </scene>
+        <!--Json Table2 Controller-->
+        <scene sceneID="Stg-tw-fPC">
+            <objects>
+                <tableViewController id="uUm-aT-wbe" customClass="JsonTable2Controller" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVP-6a-nJB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myJsonCell" id="fmW-Kj-Vaa">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmW-Kj-Vaa" id="6qv-cN-JNz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uUm-aT-wbe" id="M2l-Wo-dXQ"/>
+                            <outlet property="delegate" destination="uUm-aT-wbe" id="Qkt-FC-IUW"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="redditListTableView" destination="jVP-6a-nJB" id="uAv-Ll-Atx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVS-CM-gtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2859" y="-131"/>
+        </scene>
+        <!--Table Swipe2 Controller-->
+        <scene sceneID="rw6-d7-jDC">
+            <objects>
+                <tableViewController id="Xf3-Jv-9r9" customClass="TableSwipe2Controller" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ghr-zL-H5x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myJsonCell" id="uFP-5O-0cL">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uFP-5O-0cL" id="XGy-5k-r09">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xf3-Jv-9r9" id="MWT-EF-Bxj"/>
+                            <outlet property="delegate" destination="Xf3-Jv-9r9" id="9R8-Td-N23"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="bookTableView" destination="Ghr-zL-H5x" id="IRB-lt-AEn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfu-Hz-gvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3362" y="48"/>
         </scene>
         <!--Object View Controller-->
         <scene sceneID="I62-wT-e4l">

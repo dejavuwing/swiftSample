@@ -13,6 +13,12 @@
 		E329017C1D2C86F9007BCA10 /* ActivityModalView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329017B1D2C86F9007BCA10 /* ActivityModalView2.swift */; };
 		E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329017D1D2C9754007BCA10 /* ActivityModalView1.swift */; };
 		E32901801D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329017F1D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift */; };
+		E32901821D2CFCFC007BCA10 /* DefaultWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901811D2CFCFC007BCA10 /* DefaultWebViewController.swift */; };
+		E32901841D2CFFCE007BCA10 /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = E32901831D2CFFCE007BCA10 /* home.html */; };
+		E32901861D2D0050007BCA10 /* HtmlFileWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901851D2D0050007BCA10 /* HtmlFileWebViewController.swift */; };
+		E32901881D2D02ED007BCA10 /* NavigationWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901871D2D02ED007BCA10 /* NavigationWebViewController.swift */; };
+		E329018A1D3495AA007BCA10 /* reddit.json in Resources */ = {isa = PBXBuildFile; fileRef = E32901891D3495AA007BCA10 /* reddit.json */; };
+		E329018C1D35CDDC007BCA10 /* TableSwipe2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329018B1D35CDDC007BCA10 /* TableSwipe2Controller.swift */; };
 		E33C295C1D24C07300FD6A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C295B1D24C07300FD6A10 /* AppDelegate.swift */; };
 		E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C295D1D24C07300FD6A10 /* HomeViewController.swift */; };
 		E33C29611D24C07300FD6A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C295F1D24C07300FD6A10 /* Main.storyboard */; };
@@ -47,6 +53,12 @@
 		E329017B1D2C86F9007BCA10 /* ActivityModalView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView2.swift; sourceTree = "<group>"; };
 		E329017D1D2C9754007BCA10 /* ActivityModalView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModalView1.swift; sourceTree = "<group>"; };
 		E329017F1D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController3.swift; sourceTree = "<group>"; };
+		E32901811D2CFCFC007BCA10 /* DefaultWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultWebViewController.swift; sourceTree = "<group>"; };
+		E32901831D2CFFCE007BCA10 /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
+		E32901851D2D0050007BCA10 /* HtmlFileWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlFileWebViewController.swift; sourceTree = "<group>"; };
+		E32901871D2D02ED007BCA10 /* NavigationWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationWebViewController.swift; sourceTree = "<group>"; };
+		E32901891D3495AA007BCA10 /* reddit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reddit.json; sourceTree = "<group>"; };
+		E329018B1D35CDDC007BCA10 /* TableSwipe2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSwipe2Controller.swift; sourceTree = "<group>"; };
 		E33C29581D24C07300FD6A10 /* swiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33C295B1D24C07300FD6A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E33C295D1D24C07300FD6A10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +105,8 @@
 				E32901731D2B9FC3007BCA10 /* TableViewTableController.swift */,
 				E32901751D2BA15E007BCA10 /* JsonTable1Controller.swift */,
 				E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */,
+				E329018B1D35CDDC007BCA10 /* TableSwipe2Controller.swift */,
+				E32901891D3495AA007BCA10 /* reddit.json */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -175,6 +189,10 @@
 			isa = PBXGroup;
 			children = (
 				E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */,
+				E32901811D2CFCFC007BCA10 /* DefaultWebViewController.swift */,
+				E32901831D2CFFCE007BCA10 /* home.html */,
+				E32901851D2D0050007BCA10 /* HtmlFileWebViewController.swift */,
+				E32901871D2D02ED007BCA10 /* NavigationWebViewController.swift */,
 			);
 			name = WebView;
 			sourceTree = "<group>";
@@ -250,9 +268,11 @@
 			files = (
 				E3AE89A81D24F10F000AF808 /* bgSample1.png in Resources */,
 				E3AE89AE1D24F11A000AF808 /* bgSample2.png in Resources */,
+				E329018A1D3495AA007BCA10 /* reddit.json in Resources */,
 				E33C29691D24C07300FD6A10 /* LaunchScreen.storyboard in Resources */,
 				E33C29661D24C07300FD6A10 /* Assets.xcassets in Resources */,
 				E3AE89AC1D24F11A000AF808 /* bgSample4.jpeg in Resources */,
+				E32901841D2CFFCE007BCA10 /* home.html in Resources */,
 				E3AE89AD1D24F11A000AF808 /* bgSample3.jpeg in Resources */,
 				E33C29611D24C07300FD6A10 /* Main.storyboard in Resources */,
 			);
@@ -267,10 +287,13 @@
 			files = (
 				E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */,
 				E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */,
+				E32901881D2D02ED007BCA10 /* NavigationWebViewController.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
+				E329018C1D35CDDC007BCA10 /* TableSwipe2Controller.swift in Sources */,
 				E3AE89A31D24E177000AF808 /* ActivityIndicatorViewController1.swift in Sources */,
 				E32901781D2BB134007BCA10 /* JsonTable2Controller.swift in Sources */,
 				E33C29641D24C07300FD6A10 /* swiftSample.xcdatamodeld in Sources */,
+				E32901861D2D0050007BCA10 /* HtmlFileWebViewController.swift in Sources */,
 				E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */,
 				E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */,
 				E3AE89A11D24DE44000AF808 /* ActivityTableController.swift in Sources */,
@@ -287,6 +310,7 @@
 				E32901761D2BA15E007BCA10 /* JsonTable1Controller.swift in Sources */,
 				E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */,
 				E32901801D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift in Sources */,
+				E32901821D2CFCFC007BCA10 /* DefaultWebViewController.swift in Sources */,
 				E33C29711D24D0FA00FD6A10 /* ObjectViewController.swift in Sources */,
 				E39122B11D2A64F800F436F7 /* FormattingPickerViewController.swift in Sources */,
 			);

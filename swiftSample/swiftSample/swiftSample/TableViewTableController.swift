@@ -13,11 +13,13 @@ class TableViewTableController: UITableViewController
 {
     
     var tableList: [String] = ["Json table view 1",
-                               "Json table view 2"
+                               "Json table view 2",
+                               "Table Swipe 2"
     ]
     
-    var tableDesc: [String] = ["http://www.reddit.com/.json",
-                               "http://www.kaleidosblog.com/tutorial"
+    var tableDesc: [String] = ["웹 연결 (http://www.reddit.com/.json)",
+                               "Json 파일로 테이블 구성 ",
+                               "테이블 셀을 밀어 버튼 노출"
         
     ]
     
@@ -54,13 +56,13 @@ class TableViewTableController: UITableViewController
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         // 클릭된 테이블 열 번호에 따라 페이지를 이동시킨다.
-        switch (indexPath.row)
-        {
+        switch (indexPath.row) {
         case 0:
             self.performSegueWithIdentifier("goJsonTable1", sender: self)
         case 1:
             self.performSegueWithIdentifier("goJsonTable2", sender: self)
-        // switch 문에서는 default가 필수로 지정되어야 함.
+        case 2:
+            self.performSegueWithIdentifier("goTableSwipe2", sender: self)
         default:
             print("#\(indexPath.row)")
             return
