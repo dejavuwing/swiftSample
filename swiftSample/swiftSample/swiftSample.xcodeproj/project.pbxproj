@@ -22,6 +22,11 @@
 		E32901901D36604E007BCA10 /* ImagePickerTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329018F1D36604E007BCA10 /* ImagePickerTableController.swift */; };
 		E32901921D366232007BCA10 /* defaultImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901911D366232007BCA10 /* defaultImagePickerViewController.swift */; };
 		E32901941D367070007BCA10 /* ImagePickerwithCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901931D367070007BCA10 /* ImagePickerwithCameraController.swift */; };
+		E32901971D38D02A007BCA10 /* GravityTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901961D38D02A007BCA10 /* GravityTableController.swift */; };
+		E32901991D38D7E5007BCA10 /* GravityAndCollisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901981D38D7E5007BCA10 /* GravityAndCollisionViewController.swift */; };
+		E329019B1D38E9E9007BCA10 /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329019A1D38E9E9007BCA10 /* SnapViewController.swift */; };
+		E329019D1D3C6118007BCA10 /* AttachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329019C1D3C6118007BCA10 /* AttachViewController.swift */; };
+		E329019F1D3C990F007BCA10 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329019E1D3C990F007BCA10 /* PushViewController.swift */; };
 		E33C295C1D24C07300FD6A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C295B1D24C07300FD6A10 /* AppDelegate.swift */; };
 		E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C295D1D24C07300FD6A10 /* HomeViewController.swift */; };
 		E33C29611D24C07300FD6A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33C295F1D24C07300FD6A10 /* Main.storyboard */; };
@@ -39,6 +44,7 @@
 		E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B21D2A823100F436F7 /* DefaultDatePickerViewController.swift */; };
 		E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */; };
 		E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */; };
+		E39402291D3F0840008E63D1 /* GravityAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39402281D3F0840008E63D1 /* GravityAlertViewController.swift */; };
 		E3AE89A11D24DE44000AF808 /* ActivityTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */; };
 		E3AE89A31D24E177000AF808 /* ActivityIndicatorViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */; };
 		E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */; };
@@ -65,6 +71,11 @@
 		E329018F1D36604E007BCA10 /* ImagePickerTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerTableController.swift; sourceTree = "<group>"; };
 		E32901911D366232007BCA10 /* defaultImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = defaultImagePickerViewController.swift; sourceTree = "<group>"; };
 		E32901931D367070007BCA10 /* ImagePickerwithCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerwithCameraController.swift; sourceTree = "<group>"; };
+		E32901961D38D02A007BCA10 /* GravityTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityTableController.swift; sourceTree = "<group>"; };
+		E32901981D38D7E5007BCA10 /* GravityAndCollisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityAndCollisionViewController.swift; sourceTree = "<group>"; };
+		E329019A1D38E9E9007BCA10 /* SnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		E329019C1D3C6118007BCA10 /* AttachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachViewController.swift; sourceTree = "<group>"; };
+		E329019E1D3C990F007BCA10 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		E33C29581D24C07300FD6A10 /* swiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33C295B1D24C07300FD6A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E33C295D1D24C07300FD6A10 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +95,7 @@
 		E39122B21D2A823100F436F7 /* DefaultDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultDatePickerViewController.swift; path = ../DefaultDatePickerViewController.swift; sourceTree = "<group>"; };
 		E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliveryDatePickerViewController.swift; path = ../DeliveryDatePickerViewController.swift; sourceTree = "<group>"; };
 		E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewTableController.swift; path = ../WebViewTableController.swift; sourceTree = "<group>"; };
+		E39402281D3F0840008E63D1 /* GravityAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityAlertViewController.swift; sourceTree = "<group>"; };
 		E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityTableController.swift; path = ../ActivityTableController.swift; sourceTree = "<group>"; };
 		E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorViewController1.swift; path = ../ActivityIndicatorViewController1.swift; sourceTree = "<group>"; };
 		E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorViewController2.swift; path = ../ActivityIndicatorViewController2.swift; sourceTree = "<group>"; };
@@ -146,6 +158,19 @@
 			name = ImagePicker;
 			sourceTree = "<group>";
 		};
+		E32901951D38CFFC007BCA10 /* Gravity */ = {
+			isa = PBXGroup;
+			children = (
+				E32901961D38D02A007BCA10 /* GravityTableController.swift */,
+				E32901981D38D7E5007BCA10 /* GravityAndCollisionViewController.swift */,
+				E329019A1D38E9E9007BCA10 /* SnapViewController.swift */,
+				E329019C1D3C6118007BCA10 /* AttachViewController.swift */,
+				E329019E1D3C990F007BCA10 /* PushViewController.swift */,
+				E39402281D3F0840008E63D1 /* GravityAlertViewController.swift */,
+			);
+			name = Gravity;
+			sourceTree = "<group>";
+		};
 		E33C294F1D24C07300FD6A10 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +202,7 @@
 				E32901721D2B9F72007BCA10 /* TableView */,
 				E32901791D2BBCCC007BCA10 /* ActivityIndicator */,
 				E329018E1D366014007BCA10 /* ImagePicker */,
+				E32901951D38CFFC007BCA10 /* Gravity */,
 				E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */,
 				E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */,
 				E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */,
@@ -304,6 +330,7 @@
 			files = (
 				E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */,
 				E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */,
+				E329019B1D38E9E9007BCA10 /* SnapViewController.swift in Sources */,
 				E32901881D2D02ED007BCA10 /* NavigationWebViewController.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
 				E329018C1D35CDDC007BCA10 /* TableSwipe2Controller.swift in Sources */,
@@ -311,14 +338,18 @@
 				E32901781D2BB134007BCA10 /* JsonTable2Controller.swift in Sources */,
 				E33C29641D24C07300FD6A10 /* swiftSample.xcdatamodeld in Sources */,
 				E32901861D2D0050007BCA10 /* HtmlFileWebViewController.swift in Sources */,
+				E32901971D38D02A007BCA10 /* GravityTableController.swift in Sources */,
 				E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */,
 				E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */,
 				E3AE89A11D24DE44000AF808 /* ActivityTableController.swift in Sources */,
+				E329019F1D3C990F007BCA10 /* PushViewController.swift in Sources */,
 				E32901941D367070007BCA10 /* ImagePickerwithCameraController.swift in Sources */,
 				E3AE89B01D24F29B000AF808 /* ActivityModalView.swift in Sources */,
 				E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */,
 				E33C29731D24D41D00FD6A10 /* ObjectViewResultcontroller.swift in Sources */,
 				E32901741D2B9FC3007BCA10 /* TableViewTableController.swift in Sources */,
+				E39402291D3F0840008E63D1 /* GravityAlertViewController.swift in Sources */,
+				E329019D1D3C6118007BCA10 /* AttachViewController.swift in Sources */,
 				E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */,
 				E33C29751D24D8AF00FD6A10 /* ObjectTableController.swift in Sources */,
 				E32901921D366232007BCA10 /* defaultImagePickerViewController.swift in Sources */,
@@ -333,6 +364,7 @@
 				E32901821D2CFCFC007BCA10 /* DefaultWebViewController.swift in Sources */,
 				E33C29711D24D0FA00FD6A10 /* ObjectViewController.swift in Sources */,
 				E39122B11D2A64F800F436F7 /* FormattingPickerViewController.swift in Sources */,
+				E32901991D38D7E5007BCA10 /* GravityAndCollisionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

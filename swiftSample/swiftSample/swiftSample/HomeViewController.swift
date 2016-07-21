@@ -18,7 +18,8 @@ class HomeViewController: UITableViewController
                                 "UIPicketView ",
                                 "Table View 다루기",
                                 "Web View 다루기",
-                                "Image Picker"
+                                "Image Picker",
+                                "Gravity and Collision"
     ]
     
     var objectDesc: [String] = ["기본 Viewd에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
@@ -28,7 +29,8 @@ class HomeViewController: UITableViewController
                                 "Pickket View",
                                 "여러가지 Table View",
                                 "여러가지 Web View",
-                                "이미지 다루기"
+                                "이미지 다루기",
+                                "UIGravityBehavior 등의 다아나믹한 애니메이션 구현"
     ]
     
     override func viewDidLoad() {
@@ -82,6 +84,8 @@ class HomeViewController: UITableViewController
             self.performSegueWithIdentifier("goWebView", sender: self)
         case 7:
             self.performSegueWithIdentifier("goImagePicker", sender: self)
+        case 8:
+            self.performSegueWithIdentifier("goGravityList", sender: self)
         default:
             print("#\(indexPath.row)")
             return
