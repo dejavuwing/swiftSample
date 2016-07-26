@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074E933E1AC2CC7D22B2E673 /* Pods_swiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998524988546B224F95585BA /* Pods_swiftSample.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E32901741D2B9FC3007BCA10 /* TableViewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901731D2B9FC3007BCA10 /* TableViewTableController.swift */; };
 		E32901761D2BA15E007BCA10 /* JsonTable1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901751D2BA15E007BCA10 /* JsonTable1Controller.swift */; };
 		E32901781D2BB134007BCA10 /* JsonTable2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */; };
@@ -45,6 +46,17 @@
 		E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */; };
 		E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */; };
 		E39402291D3F0840008E63D1 /* GravityAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39402281D3F0840008E63D1 /* GravityAlertViewController.swift */; };
+		E394022E1D45D0DB008E63D1 /* DropboxAPIListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394022D1D45D0DB008E63D1 /* DropboxAPIListController.swift */; };
+		E39402311D461A0C008E63D1 /* PageViewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39402301D461A0C008E63D1 /* PageViewTableController.swift */; };
+		E39402391D461BBB008E63D1 /* 20151022_130006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39402321D461BBB008E63D1 /* 20151022_130006.jpg */; };
+		E394023A1D461BBB008E63D1 /* 20151022_174514.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39402331D461BBB008E63D1 /* 20151022_174514.jpg */; };
+		E394023B1D461BBB008E63D1 /* 20151023_153014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39402341D461BBB008E63D1 /* 20151023_153014.jpg */; };
+		E394023C1D461BBB008E63D1 /* 20151024_102126.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39402351D461BBB008E63D1 /* 20151024_102126.jpg */; };
+		E394023D1D461BBB008E63D1 /* 20151024_103636.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39402361D461BBB008E63D1 /* 20151024_103636.jpg */; };
+		E394023E1D461BBB008E63D1 /* 20151024_120503.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39402371D461BBB008E63D1 /* 20151024_120503.jpg */; };
+		E394023F1D461BBB008E63D1 /* 20151024_120507.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39402381D461BBB008E63D1 /* 20151024_120507.jpg */; };
+		E39402451D462862008E63D1 /* ChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39402441D462862008E63D1 /* ChildrenViewController.swift */; };
+		E39402471D4638E2008E63D1 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39402461D4638E2008E63D1 /* PageContentViewController.swift */; };
 		E3AE89A11D24DE44000AF808 /* ActivityTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */; };
 		E3AE89A31D24E177000AF808 /* ActivityIndicatorViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */; };
 		E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */; };
@@ -56,6 +68,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B8C2C06520AEC3D3FC1537B /* Pods-swiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftSample/Pods-swiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		998524988546B224F95585BA /* Pods_swiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32901731D2B9FC3007BCA10 /* TableViewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTableController.swift; sourceTree = "<group>"; };
 		E32901751D2BA15E007BCA10 /* JsonTable1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTable1Controller.swift; sourceTree = "<group>"; };
 		E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTable2Controller.swift; sourceTree = "<group>"; };
@@ -96,6 +110,17 @@
 		E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliveryDatePickerViewController.swift; path = ../DeliveryDatePickerViewController.swift; sourceTree = "<group>"; };
 		E39122B81D2A9A1500F436F7 /* WebViewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewTableController.swift; path = ../WebViewTableController.swift; sourceTree = "<group>"; };
 		E39402281D3F0840008E63D1 /* GravityAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityAlertViewController.swift; sourceTree = "<group>"; };
+		E394022D1D45D0DB008E63D1 /* DropboxAPIListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxAPIListController.swift; sourceTree = "<group>"; };
+		E39402301D461A0C008E63D1 /* PageViewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewTableController.swift; sourceTree = "<group>"; };
+		E39402321D461BBB008E63D1 /* 20151022_130006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20151022_130006.jpg; sourceTree = "<group>"; };
+		E39402331D461BBB008E63D1 /* 20151022_174514.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20151022_174514.jpg; sourceTree = "<group>"; };
+		E39402341D461BBB008E63D1 /* 20151023_153014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20151023_153014.jpg; sourceTree = "<group>"; };
+		E39402351D461BBB008E63D1 /* 20151024_102126.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20151024_102126.jpg; sourceTree = "<group>"; };
+		E39402361D461BBB008E63D1 /* 20151024_103636.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20151024_103636.jpg; sourceTree = "<group>"; };
+		E39402371D461BBB008E63D1 /* 20151024_120503.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20151024_120503.jpg; sourceTree = "<group>"; };
+		E39402381D461BBB008E63D1 /* 20151024_120507.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20151024_120507.jpg; sourceTree = "<group>"; };
+		E39402441D462862008E63D1 /* ChildrenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
+		E39402461D4638E2008E63D1 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		E3AE89A01D24DE44000AF808 /* ActivityTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityTableController.swift; path = ../ActivityTableController.swift; sourceTree = "<group>"; };
 		E3AE89A21D24E177000AF808 /* ActivityIndicatorViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorViewController1.swift; path = ../ActivityIndicatorViewController1.swift; sourceTree = "<group>"; };
 		E3AE89A41D24EBCE000AF808 /* ActivityIndicatorViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorViewController2.swift; path = ../ActivityIndicatorViewController2.swift; sourceTree = "<group>"; };
@@ -104,6 +129,7 @@
 		E3AE89AA1D24F11A000AF808 /* bgSample3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgSample3.jpeg; sourceTree = "<group>"; };
 		E3AE89AB1D24F11A000AF808 /* bgSample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSample2.png; sourceTree = "<group>"; };
 		E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityModalView.swift; path = ../ActivityModalView.swift; sourceTree = "<group>"; };
+		F87FF78C18795D1BDE5DAED8 /* Pods-swiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftSample/Pods-swiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +137,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074E933E1AC2CC7D22B2E673 /* Pods_swiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC088987916659BDEE311E51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				998524988546B224F95585BA /* Pods_swiftSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E32901721D2B9F72007BCA10 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +212,8 @@
 				E33C295A1D24C07300FD6A10 /* swiftSample */,
 				E33C29591D24C07300FD6A10 /* Products */,
 				E3AE89A61D24F0DC000AF808 /* Assets */,
+				F20849D31459B36E984A7C5E /* Pods */,
+				CC088987916659BDEE311E51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +240,8 @@
 				E32901791D2BBCCC007BCA10 /* ActivityIndicator */,
 				E329018E1D366014007BCA10 /* ImagePicker */,
 				E32901951D38CFFC007BCA10 /* Gravity */,
+				E394022C1D45D0B7008E63D1 /* Dropbox */,
+				E394022F1D4619EC008E63D1 /* PageView */,
 				E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */,
 				E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */,
 				E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */,
@@ -240,15 +279,49 @@
 			name = WebView;
 			sourceTree = "<group>";
 		};
+		E394022C1D45D0B7008E63D1 /* Dropbox */ = {
+			isa = PBXGroup;
+			children = (
+				E394022D1D45D0DB008E63D1 /* DropboxAPIListController.swift */,
+			);
+			name = Dropbox;
+			sourceTree = "<group>";
+		};
+		E394022F1D4619EC008E63D1 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				E39402301D461A0C008E63D1 /* PageViewTableController.swift */,
+				E39402441D462862008E63D1 /* ChildrenViewController.swift */,
+				E39402461D4638E2008E63D1 /* PageContentViewController.swift */,
+			);
+			name = PageView;
+			sourceTree = "<group>";
+		};
 		E3AE89A61D24F0DC000AF808 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E39402321D461BBB008E63D1 /* 20151022_130006.jpg */,
+				E39402331D461BBB008E63D1 /* 20151022_174514.jpg */,
+				E39402341D461BBB008E63D1 /* 20151023_153014.jpg */,
+				E39402351D461BBB008E63D1 /* 20151024_102126.jpg */,
+				E39402361D461BBB008E63D1 /* 20151024_103636.jpg */,
+				E39402371D461BBB008E63D1 /* 20151024_120503.jpg */,
+				E39402381D461BBB008E63D1 /* 20151024_120507.jpg */,
 				E3AE89A91D24F11A000AF808 /* bgSample4.jpeg */,
 				E3AE89AA1D24F11A000AF808 /* bgSample3.jpeg */,
 				E3AE89AB1D24F11A000AF808 /* bgSample2.png */,
 				E3AE89A71D24F10F000AF808 /* bgSample1.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		F20849D31459B36E984A7C5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F87FF78C18795D1BDE5DAED8 /* Pods-swiftSample.debug.xcconfig */,
+				7B8C2C06520AEC3D3FC1537B /* Pods-swiftSample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E33C296D1D24C07300FD6A10 /* Build configuration list for PBXNativeTarget "swiftSample" */;
 			buildPhases = (
+				CC487C32D33F3EA7A8FD943E /* [CP] Check Pods Manifest.lock */,
 				E33C29541D24C07300FD6A10 /* Sources */,
 				E33C29551D24C07300FD6A10 /* Frameworks */,
 				E33C29561D24C07300FD6A10 /* Resources */,
+				7376CE1D5FED1F4E58825E6D /* [CP] Embed Pods Frameworks */,
+				A356360605CAF65064922450 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,19 +385,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39402391D461BBB008E63D1 /* 20151022_130006.jpg in Resources */,
+				E394023B1D461BBB008E63D1 /* 20151023_153014.jpg in Resources */,
+				E394023A1D461BBB008E63D1 /* 20151022_174514.jpg in Resources */,
 				E3AE89A81D24F10F000AF808 /* bgSample1.png in Resources */,
 				E3AE89AE1D24F11A000AF808 /* bgSample2.png in Resources */,
+				E394023F1D461BBB008E63D1 /* 20151024_120507.jpg in Resources */,
 				E329018A1D3495AA007BCA10 /* reddit.json in Resources */,
 				E33C29691D24C07300FD6A10 /* LaunchScreen.storyboard in Resources */,
 				E33C29661D24C07300FD6A10 /* Assets.xcassets in Resources */,
 				E3AE89AC1D24F11A000AF808 /* bgSample4.jpeg in Resources */,
 				E32901841D2CFFCE007BCA10 /* home.html in Resources */,
 				E3AE89AD1D24F11A000AF808 /* bgSample3.jpeg in Resources */,
+				E394023E1D461BBB008E63D1 /* 20151024_120503.jpg in Resources */,
+				E394023C1D461BBB008E63D1 /* 20151024_102126.jpg in Resources */,
 				E33C29611D24C07300FD6A10 /* Main.storyboard in Resources */,
+				E394023D1D461BBB008E63D1 /* 20151024_103636.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7376CE1D5FED1F4E58825E6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftSample/Pods-swiftSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A356360605CAF65064922450 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftSample/Pods-swiftSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC487C32D33F3EA7A8FD943E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E33C29541D24C07300FD6A10 /* Sources */ = {
@@ -331,6 +462,7 @@
 				E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */,
 				E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */,
 				E329019B1D38E9E9007BCA10 /* SnapViewController.swift in Sources */,
+				E39402471D4638E2008E63D1 /* PageContentViewController.swift in Sources */,
 				E32901881D2D02ED007BCA10 /* NavigationWebViewController.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
 				E329018C1D35CDDC007BCA10 /* TableSwipe2Controller.swift in Sources */,
@@ -353,10 +485,12 @@
 				E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */,
 				E33C29751D24D8AF00FD6A10 /* ObjectTableController.swift in Sources */,
 				E32901921D366232007BCA10 /* defaultImagePickerViewController.swift in Sources */,
+				E394022E1D45D0DB008E63D1 /* DropboxAPIListController.swift in Sources */,
 				E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */,
 				E33C295C1D24C07300FD6A10 /* AppDelegate.swift in Sources */,
 				E32901901D36604E007BCA10 /* ImagePickerTableController.swift in Sources */,
 				E329017C1D2C86F9007BCA10 /* ActivityModalView2.swift in Sources */,
+				E39402451D462862008E63D1 /* ChildrenViewController.swift in Sources */,
 				E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */,
 				E32901761D2BA15E007BCA10 /* JsonTable1Controller.swift in Sources */,
 				E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */,
@@ -365,6 +499,7 @@
 				E33C29711D24D0FA00FD6A10 /* ObjectViewController.swift in Sources */,
 				E39122B11D2A64F800F436F7 /* FormattingPickerViewController.swift in Sources */,
 				E32901991D38D7E5007BCA10 /* GravityAndCollisionViewController.swift in Sources */,
+				E39402311D461A0C008E63D1 /* PageViewTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +612,7 @@
 		};
 		E33C296E1D24C07300FD6A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87FF78C18795D1BDE5DAED8 /* Pods-swiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = swiftSample/Info.plist;
@@ -488,6 +624,7 @@
 		};
 		E33C296F1D24C07300FD6A10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B8C2C06520AEC3D3FC1537B /* Pods-swiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = swiftSample/Info.plist;

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SwiftyDropbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // swiftyDropbox SDK auth
+        DropboxAuthManager.sharedAuthManager = DropboxAuthManager(appKey: "cpazgljzaw6xppu")
+        // Dropbox.setupWithAppKey("cpazgljzaw6xppu")
+        
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        //if let authResult = Dropbox.handleRedirectURL(url) {
+        if let authResult = DropboxAuthManager.sharedAuthManager.handleRedirectURL(url) {
+            switch authResult {
+            case .Success(let token):
+                print("Dropbox authorazation Seccess! User is logged into Dropbox with token: \(token)")
+            case .Error(let error, let description):
+                print("Dropbox authrazation Error \(error): \(description)")
+            }
+        }
+        
+        return false
     }
 
     func applicationWillResignActive(application: UIApplication) {

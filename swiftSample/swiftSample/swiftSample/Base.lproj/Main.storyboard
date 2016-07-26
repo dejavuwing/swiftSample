@@ -225,6 +225,105 @@
             </objects>
             <point key="canvasLocation" x="-871" y="3527"/>
         </scene>
+        <!--Page View Table Controller-->
+        <scene sceneID="mcK-Ir-Gjp">
+            <objects>
+                <tableViewController id="wmS-fS-e9b" customClass="PageViewTableController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zoM-D0-jlw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableListCell" id="2t1-39-hEJ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2t1-39-hEJ" id="4xe-0z-Gbh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wmS-fS-e9b" id="AC8-KX-rxO"/>
+                            <outlet property="delegate" destination="wmS-fS-e9b" id="B3a-lW-1qd"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="JTi-pJ-aEp" kind="show" identifier="goImageSideView" id="064-1s-SEB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwn-EI-Qt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30" y="5164"/>
+        </scene>
+        <!--Children View Controller-->
+        <scene sceneID="OQU-1N-4Dc">
+            <objects>
+                <viewController id="JTi-pJ-aEp" customClass="ChildrenViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="US9-xB-Rnt"/>
+                        <viewControllerLayoutGuide type="bottom" id="zS2-Bw-Oee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hfd-4h-HKq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMH-kE-oCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-518" y="5989"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="zDq-bj-hcb">
+            <objects>
+                <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dyx-We-aiN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NC2-Kg-tho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="6249"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="OQZ-E0-oa8">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="hDj-vg-3lD" customClass="PageContentViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gII-zQ-Csb"/>
+                        <viewControllerLayoutGuide type="bottom" id="aM3-f0-ekP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ysM-cL-lOz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vce-ib-sDS">
+                                <rect key="frame" x="0.0" y="28" width="600" height="449"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpL-NJ-uqD">
+                                <rect key="frame" x="119" y="485" width="363" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vce-ib-sDS" secondAttribute="trailing" constant="-20" id="M8f-zu-RAE"/>
+                            <constraint firstItem="lpL-NJ-uqD" firstAttribute="top" secondItem="vce-ib-sDS" secondAttribute="bottom" constant="8" id="TPl-fI-Bs4"/>
+                            <constraint firstItem="vce-ib-sDS" firstAttribute="leading" secondItem="ysM-cL-lOz" secondAttribute="leadingMargin" constant="-20" id="VdG-fI-5iz"/>
+                            <constraint firstItem="lpL-NJ-uqD" firstAttribute="centerX" secondItem="vce-ib-sDS" secondAttribute="centerX" id="W6d-bE-DrS"/>
+                            <constraint firstItem="lpL-NJ-uqD" firstAttribute="leading" secondItem="ysM-cL-lOz" secondAttribute="leadingMargin" constant="99" id="dEr-Xp-2dg"/>
+                            <constraint firstItem="vce-ib-sDS" firstAttribute="top" secondItem="gII-zQ-Csb" secondAttribute="bottom" constant="8" id="gtl-Y5-2RS"/>
+                            <constraint firstItem="aM3-f0-ekP" firstAttribute="top" secondItem="vce-ib-sDS" secondAttribute="bottom" constant="123" id="zTV-7T-FFJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bkImageView" destination="vce-ib-sDS" id="vSx-Vf-iwo"/>
+                        <outlet property="heading" destination="lpL-NJ-uqD" id="8nJ-Qx-qBA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qrb-xR-MXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004" y="6622"/>
+        </scene>
         <!--Image Picker Table Controller-->
         <scene sceneID="r1z-W7-kCr">
             <objects>
@@ -291,11 +390,62 @@
                         <segue destination="SFs-su-494" kind="show" identifier="goWebView" id="4X5-yK-p7t"/>
                         <segue destination="XAn-nJ-js3" kind="show" identifier="goImagePicker" id="waB-Bh-Cyf"/>
                         <segue destination="mec-Nm-CDC" kind="show" identifier="goGravityList" id="f1v-Pl-0xt"/>
+                        <segue destination="Lh4-Aj-hxT" kind="show" identifier="goDropboxList" id="AfH-hB-2Yn"/>
+                        <segue destination="wmS-fS-e9b" kind="show" identifier="goPageView" id="dQX-UL-jnA"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGs-3H-f7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="566" y="1137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ugU-DJ-Fyf">
+            <objects>
+                <viewController id="94V-9H-kIS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mFa-lX-dTQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="YMa-cD-60X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Jl-JN-met">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdc-NS-AKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1194" y="1633"/>
+        </scene>
+        <!--DropboxAPI List Controller-->
+        <scene sceneID="ZRQ-0G-i2p">
+            <objects>
+                <tableViewController id="Lh4-Aj-hxT" customClass="DropboxAPIListController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="S2G-ep-pZG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableListCell" id="ecE-21-ACr">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecE-21-ACr" id="aS3-Zw-Nnp">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lh4-Aj-hxT" id="BkA-xb-KAa"/>
+                            <outlet property="delegate" destination="Lh4-Aj-hxT" id="WoC-ff-pJd"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="94V-9H-kIS" kind="show" id="rSU-78-NSI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIr-Tu-Pfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-619" y="781"/>
         </scene>
         <!--Table View Table Controller-->
         <scene sceneID="Vpq-hI-SWk">
@@ -1423,7 +1573,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHR-wV-bjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884" y="1769"/>
+            <point key="canvasLocation" x="-782" y="2377"/>
         </scene>
         <!--Object View Result Controller-->
         <scene sceneID="vaF-cq-mVl">

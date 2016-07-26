@@ -17,9 +17,11 @@ class HomeViewController: UITableViewController
                                 "UIActivityindicatorview",
                                 "UIPicketView ",
                                 "Table View 다루기",
+                                "Page View 다루기",
                                 "Web View 다루기",
                                 "Image Picker",
-                                "Gravity and Collision"
+                                "Gravity and Collision",
+                                "Dropbox SDK"
     ]
     
     var objectDesc: [String] = ["기본 Viewd에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
@@ -28,9 +30,11 @@ class HomeViewController: UITableViewController
                                 "로딩화면에 사용되는 모달 창",
                                 "Pickket View",
                                 "여러가지 Table View",
+                                "페이지 뷰 다루기",
                                 "여러가지 Web View",
                                 "이미지 다루기",
-                                "UIGravityBehavior 등의 다아나믹한 애니메이션 구현"
+                                "UIGravityBehavior 등의 다아나믹한 애니메이션 구현",
+                                "swiftyDropbox"
     ]
     
     override func viewDidLoad() {
@@ -81,11 +85,15 @@ class HomeViewController: UITableViewController
         case 5:
             self.performSegueWithIdentifier("goTableView", sender: self)
         case 6:
-            self.performSegueWithIdentifier("goWebView", sender: self)
+            self.performSegueWithIdentifier("goPageView", sender: self)
         case 7:
-            self.performSegueWithIdentifier("goImagePicker", sender: self)
+            self.performSegueWithIdentifier("goWebView", sender: self)
         case 8:
+            self.performSegueWithIdentifier("goImagePicker", sender: self)
+        case 9:
             self.performSegueWithIdentifier("goGravityList", sender: self)
+        case 10:
+            self.performSegueWithIdentifier("goDropboxList", sender: self)
         default:
             print("#\(indexPath.row)")
             return

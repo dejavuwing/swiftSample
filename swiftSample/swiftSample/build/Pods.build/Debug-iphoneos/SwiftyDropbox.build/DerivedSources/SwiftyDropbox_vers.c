@@ -1,0 +1,1 @@
+ const unsigned char SwiftyDropboxVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:SwiftyDropbox  PROJECT:Pods-1" "\n"; const double SwiftyDropboxVersionNumber __attribute__ ((used)) = (double)1.;
