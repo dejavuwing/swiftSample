@@ -20,16 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // swiftyDropbox SDK auth
-        DropboxAuthManager.sharedAuthManager = DropboxAuthManager(appKey: "cpazgljzaw6xppu")
-        // Dropbox.setupWithAppKey("cpazgljzaw6xppu")
+        // DropboxAuthManager.sharedAuthManager = DropboxAuthManager(appKey: "cpazgljzaw6xppu")
+        Dropbox.setupWithAppKey("cpazgljzaw6xppu")
         
         return true
     }
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+    func application(app: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         
-        //if let authResult = Dropbox.handleRedirectURL(url) {
-        if let authResult = DropboxAuthManager.sharedAuthManager.handleRedirectURL(url) {
+        if let authResult = Dropbox.handleRedirectURL(url) {
+        // if let authResult = DropboxAuthManager.sharedAuthManager.handleRedirectURL(url) {
             switch authResult {
             case .Success(let token):
                 print("Dropbox authorazation Seccess! User is logged into Dropbox with token: \(token)")

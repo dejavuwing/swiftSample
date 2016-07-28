@@ -38,6 +38,8 @@
 		E33C29731D24D41D00FD6A10 /* ObjectViewResultcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C29721D24D41D00FD6A10 /* ObjectViewResultcontroller.swift */; };
 		E33C29751D24D8AF00FD6A10 /* ObjectTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C29741D24D8AF00FD6A10 /* ObjectTableController.swift */; };
 		E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C29761D24D9B100FD6A10 /* AlertTableController.swift */; };
+		E3651B1A1D471690005513B0 /* DropboxFileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3651B191D471690005513B0 /* DropboxFileEditController.swift */; };
+		E3651B1C1D486833005513B0 /* DropboxDownloadProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3651B1B1D486833005513B0 /* DropboxDownloadProgressController.swift */; };
 		E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */; };
 		E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */; };
 		E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */; };
@@ -65,6 +67,7 @@
 		E3AE89AD1D24F11A000AF808 /* bgSample3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3AE89AA1D24F11A000AF808 /* bgSample3.jpeg */; };
 		E3AE89AE1D24F11A000AF808 /* bgSample2.png in Resources */ = {isa = PBXBuildFile; fileRef = E3AE89AB1D24F11A000AF808 /* bgSample2.png */; };
 		E3AE89B01D24F29B000AF808 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */; };
+		E3D96ADE1D48B49E00F2C73F /* ProgressBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D96ADD1D48B49E00F2C73F /* ProgressBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +105,8 @@
 		E33C29721D24D41D00FD6A10 /* ObjectViewResultcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectViewResultcontroller.swift; path = ../ObjectViewResultcontroller.swift; sourceTree = "<group>"; };
 		E33C29741D24D8AF00FD6A10 /* ObjectTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectTableController.swift; path = ../ObjectTableController.swift; sourceTree = "<group>"; };
 		E33C29761D24D9B100FD6A10 /* AlertTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertTableController.swift; path = ../AlertTableController.swift; sourceTree = "<group>"; };
+		E3651B191D471690005513B0 /* DropboxFileEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxFileEditController.swift; sourceTree = "<group>"; };
+		E3651B1B1D486833005513B0 /* DropboxDownloadProgressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxDownloadProgressController.swift; sourceTree = "<group>"; };
 		E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTableController.swift; path = ../PickerTableController.swift; sourceTree = "<group>"; };
 		E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultPickerViewController.swift; path = ../DefaultPickerViewController.swift; sourceTree = "<group>"; };
 		E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PizzaPickerViewController.swift; path = ../PizzaPickerViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +134,7 @@
 		E3AE89AA1D24F11A000AF808 /* bgSample3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgSample3.jpeg; sourceTree = "<group>"; };
 		E3AE89AB1D24F11A000AF808 /* bgSample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSample2.png; sourceTree = "<group>"; };
 		E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityModalView.swift; path = ../ActivityModalView.swift; sourceTree = "<group>"; };
+		E3D96ADD1D48B49E00F2C73F /* ProgressBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarController.swift; sourceTree = "<group>"; };
 		F87FF78C18795D1BDE5DAED8 /* Pods-swiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftSample/Pods-swiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,15 +245,10 @@
 				E32901721D2B9F72007BCA10 /* TableView */,
 				E32901791D2BBCCC007BCA10 /* ActivityIndicator */,
 				E329018E1D366014007BCA10 /* ImagePicker */,
+				E3BD46E91D4A2D770063A516 /* PickerView */,
 				E32901951D38CFFC007BCA10 /* Gravity */,
 				E394022C1D45D0B7008E63D1 /* Dropbox */,
 				E394022F1D4619EC008E63D1 /* PageView */,
-				E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */,
-				E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */,
-				E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */,
-				E39122B01D2A64F800F436F7 /* FormattingPickerViewController.swift */,
-				E39122B21D2A823100F436F7 /* DefaultDatePickerViewController.swift */,
-				E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */,
 				E33C295F1D24C07300FD6A10 /* Main.storyboard */,
 				E33C29651D24C07300FD6A10 /* Assets.xcassets */,
 				E33C29671D24C07300FD6A10 /* LaunchScreen.storyboard */,
@@ -283,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				E394022D1D45D0DB008E63D1 /* DropboxAPIListController.swift */,
+				E3651B191D471690005513B0 /* DropboxFileEditController.swift */,
+				E3651B1B1D486833005513B0 /* DropboxDownloadProgressController.swift */,
 			);
 			name = Dropbox;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				E39402301D461A0C008E63D1 /* PageViewTableController.swift */,
 				E39402441D462862008E63D1 /* ChildrenViewController.swift */,
 				E39402461D4638E2008E63D1 /* PageContentViewController.swift */,
+				E3D96ADD1D48B49E00F2C73F /* ProgressBarController.swift */,
 			);
 			name = PageView;
 			sourceTree = "<group>";
@@ -313,6 +317,19 @@
 				E3AE89A71D24F10F000AF808 /* bgSample1.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		E3BD46E91D4A2D770063A516 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */,
+				E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */,
+				E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */,
+				E39122B01D2A64F800F436F7 /* FormattingPickerViewController.swift */,
+				E39122B21D2A823100F436F7 /* DefaultDatePickerViewController.swift */,
+				E39122B41D2A89A800F436F7 /* DeliveryDatePickerViewController.swift */,
+			);
+			name = PickerView;
 			sourceTree = "<group>";
 		};
 		F20849D31459B36E984A7C5E /* Pods */ = {
@@ -463,6 +480,7 @@
 				E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */,
 				E329019B1D38E9E9007BCA10 /* SnapViewController.swift in Sources */,
 				E39402471D4638E2008E63D1 /* PageContentViewController.swift in Sources */,
+				E3D96ADE1D48B49E00F2C73F /* ProgressBarController.swift in Sources */,
 				E32901881D2D02ED007BCA10 /* NavigationWebViewController.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
 				E329018C1D35CDDC007BCA10 /* TableSwipe2Controller.swift in Sources */,
@@ -477,6 +495,7 @@
 				E329019F1D3C990F007BCA10 /* PushViewController.swift in Sources */,
 				E32901941D367070007BCA10 /* ImagePickerwithCameraController.swift in Sources */,
 				E3AE89B01D24F29B000AF808 /* ActivityModalView.swift in Sources */,
+				E3651B1A1D471690005513B0 /* DropboxFileEditController.swift in Sources */,
 				E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */,
 				E33C29731D24D41D00FD6A10 /* ObjectViewResultcontroller.swift in Sources */,
 				E32901741D2B9FC3007BCA10 /* TableViewTableController.swift in Sources */,
@@ -494,6 +513,7 @@
 				E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */,
 				E32901761D2BA15E007BCA10 /* JsonTable1Controller.swift in Sources */,
 				E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */,
+				E3651B1C1D486833005513B0 /* DropboxDownloadProgressController.swift in Sources */,
 				E32901801D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift in Sources */,
 				E32901821D2CFCFC007BCA10 /* DefaultWebViewController.swift in Sources */,
 				E33C29711D24D0FA00FD6A10 /* ObjectViewController.swift in Sources */,

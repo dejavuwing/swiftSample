@@ -6,7 +6,6 @@
 //  Copyright © 2016년 ngle. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class GravityAndCollisionViewController: UIViewController {

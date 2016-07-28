@@ -11,12 +11,12 @@ import SwiftyDropbox
 
 class DropboxAPIListController: UITableViewController {
     
-    var tableList: [String] = ["dropbox authorize",
-                               "Dropbox 사진 보기"
+    var tableList: [String] = ["dropbox file edit",
+                               "Dropbox 파일 다운로드"
     ]
     
-    var tableDesc: [String] = ["dropbox 인증 페이지를 띄운다.",
-                               "dropbox 이미지 로딩 후 "
+    var tableDesc: [String] = ["dropbox의 텍스트 파일을 수정한다.",
+                               "파일 다운로드와 프로그래스"
                                ]
     
     override func viewDidLoad() {
@@ -54,7 +54,9 @@ class DropboxAPIListController: UITableViewController {
         // 클릭된 테이블 열 번호에 따라 페이지를 이동시킨다.
         switch (indexPath.row) {
         case 0:
-            isAuthorizeDropbox()
+            self.performSegueWithIdentifier("goDropboxFileEdit", sender: self)
+        case 1:
+            self.performSegueWithIdentifier("goDownloadProgress", sender: self)
         default:
             print("#\(indexPath.row)")
             return

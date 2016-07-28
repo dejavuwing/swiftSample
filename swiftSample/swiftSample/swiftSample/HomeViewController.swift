@@ -8,8 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UITableViewController
-{
+class HomeViewController: UITableViewController {
     
     var objectList: [String] = ["UI Object 기본 연동 (on View)",
                                 "UI Object 기본 연동 (on Table)",
