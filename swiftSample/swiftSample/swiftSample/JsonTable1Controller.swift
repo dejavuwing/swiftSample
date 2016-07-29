@@ -6,7 +6,6 @@
 //  Copyright © 2016년 ngle. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // Main.storyboard에서 Table View를 View Controller에 dataSource, delegate를 Outlets로 연결한다.
@@ -32,8 +31,7 @@ class JsonTable1Controller: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
     }
     
-    func getRedditJson(whitchReddit: String)
-    {
+    func getRedditJson(whitchReddit: String) {
         let mySession = NSURLSession.sharedSession()
         let url: NSURL = NSURL(string: whitchReddit)!
         

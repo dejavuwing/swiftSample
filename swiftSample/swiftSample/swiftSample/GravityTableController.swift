@@ -54,8 +54,7 @@ class GravityTableController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // 클릭된 테이블 열 번호에 따라 페이지를 이동시킨다.
         switch (indexPath.row) {
         case 0:

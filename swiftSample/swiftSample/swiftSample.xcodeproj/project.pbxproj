@@ -67,7 +67,10 @@
 		E3AE89AD1D24F11A000AF808 /* bgSample3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3AE89AA1D24F11A000AF808 /* bgSample3.jpeg */; };
 		E3AE89AE1D24F11A000AF808 /* bgSample2.png in Resources */ = {isa = PBXBuildFile; fileRef = E3AE89AB1D24F11A000AF808 /* bgSample2.png */; };
 		E3AE89B01D24F29B000AF808 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */; };
+		E3B514D71D4B2AAF0001C0E9 /* JakeFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B514D61D4B2AAF0001C0E9 /* JakeFileManager.swift */; };
 		E3BD46EC1D4A365F0063A516 /* Word-List-7.json in Resources */ = {isa = PBXBuildFile; fileRef = E3BD46EB1D4A365F0063A516 /* Word-List-7.json */; };
+		E3BD46EF1D4AE4060063A516 /* JsonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD46EE1D4AE4060063A516 /* JsonTableController.swift */; };
+		E3BD46F11D4B1B490063A516 /* DefaultJsonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD46F01D4B1B490063A516 /* DefaultJsonTableController.swift */; };
 		E3D96ADE1D48B49E00F2C73F /* ProgressBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D96ADD1D48B49E00F2C73F /* ProgressBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -135,7 +138,10 @@
 		E3AE89AA1D24F11A000AF808 /* bgSample3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgSample3.jpeg; sourceTree = "<group>"; };
 		E3AE89AB1D24F11A000AF808 /* bgSample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSample2.png; sourceTree = "<group>"; };
 		E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityModalView.swift; path = ../ActivityModalView.swift; sourceTree = "<group>"; };
+		E3B514D61D4B2AAF0001C0E9 /* JakeFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JakeFileManager.swift; sourceTree = "<group>"; };
 		E3BD46EB1D4A365F0063A516 /* Word-List-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Word-List-7.json"; sourceTree = "<group>"; };
+		E3BD46EE1D4AE4060063A516 /* JsonTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTableController.swift; sourceTree = "<group>"; };
+		E3BD46F01D4B1B490063A516 /* DefaultJsonTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultJsonTableController.swift; sourceTree = "<group>"; };
 		E3D96ADD1D48B49E00F2C73F /* ProgressBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarController.swift; sourceTree = "<group>"; };
 		F87FF78C18795D1BDE5DAED8 /* Pods-swiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftSample/Pods-swiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,7 +225,7 @@
 			children = (
 				E33C295A1D24C07300FD6A10 /* swiftSample */,
 				E33C29591D24C07300FD6A10 /* Products */,
-				E3BD46EA1D4A36160063A516 /* JsonData */,
+				E3BD46EA1D4A36160063A516 /* JSonData */,
 				E3AE89A61D24F0DC000AF808 /* Assets */,
 				F20849D31459B36E984A7C5E /* Pods */,
 				CC088987916659BDEE311E51 /* Frameworks */,
@@ -252,6 +258,7 @@
 				E32901951D38CFFC007BCA10 /* Gravity */,
 				E394022C1D45D0B7008E63D1 /* Dropbox */,
 				E394022F1D4619EC008E63D1 /* PageView */,
+				E3BD46ED1D4AE3E90063A516 /* JsonView */,
 				E33C295F1D24C07300FD6A10 /* Main.storyboard */,
 				E33C29651D24C07300FD6A10 /* Assets.xcassets */,
 				E33C29671D24C07300FD6A10 /* LaunchScreen.storyboard */,
@@ -335,13 +342,23 @@
 			name = PickerView;
 			sourceTree = "<group>";
 		};
-		E3BD46EA1D4A36160063A516 /* JsonData */ = {
+		E3BD46EA1D4A36160063A516 /* JSonData */ = {
 			isa = PBXGroup;
 			children = (
 				E3BD46EB1D4A365F0063A516 /* Word-List-7.json */,
 			);
-			name = JsonData;
+			name = JSonData;
 			path = swiftSample;
+			sourceTree = "<group>";
+		};
+		E3BD46ED1D4AE3E90063A516 /* JsonView */ = {
+			isa = PBXGroup;
+			children = (
+				E3B514D61D4B2AAF0001C0E9 /* JakeFileManager.swift */,
+				E3BD46EE1D4AE4060063A516 /* JsonTableController.swift */,
+				E3BD46F01D4B1B490063A516 /* DefaultJsonTableController.swift */,
+			);
+			name = JsonView;
 			sourceTree = "<group>";
 		};
 		F20849D31459B36E984A7C5E /* Pods */ = {
@@ -501,6 +518,7 @@
 				E32901781D2BB134007BCA10 /* JsonTable2Controller.swift in Sources */,
 				E33C29641D24C07300FD6A10 /* swiftSample.xcdatamodeld in Sources */,
 				E32901861D2D0050007BCA10 /* HtmlFileWebViewController.swift in Sources */,
+				E3BD46EF1D4AE4060063A516 /* JsonTableController.swift in Sources */,
 				E32901971D38D02A007BCA10 /* GravityTableController.swift in Sources */,
 				E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */,
 				E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */,
@@ -520,12 +538,14 @@
 				E394022E1D45D0DB008E63D1 /* DropboxAPIListController.swift in Sources */,
 				E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */,
 				E33C295C1D24C07300FD6A10 /* AppDelegate.swift in Sources */,
+				E3B514D71D4B2AAF0001C0E9 /* JakeFileManager.swift in Sources */,
 				E32901901D36604E007BCA10 /* ImagePickerTableController.swift in Sources */,
 				E329017C1D2C86F9007BCA10 /* ActivityModalView2.swift in Sources */,
 				E39402451D462862008E63D1 /* ChildrenViewController.swift in Sources */,
 				E39122B91D2A9A1500F436F7 /* WebViewTableController.swift in Sources */,
 				E32901761D2BA15E007BCA10 /* JsonTable1Controller.swift in Sources */,
 				E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */,
+				E3BD46F11D4B1B490063A516 /* DefaultJsonTableController.swift in Sources */,
 				E3651B1C1D486833005513B0 /* DropboxDownloadProgressController.swift in Sources */,
 				E32901801D2CA25C007BCA10 /* ActivityIndicatorViewController3.swift in Sources */,
 				E32901821D2CFCFC007BCA10 /* DefaultWebViewController.swift in Sources */,

@@ -20,7 +20,8 @@ class HomeViewController: UITableViewController {
                                 "Web View 다루기",
                                 "Image Picker",
                                 "Gravity and Collision",
-                                "Dropbox SDK"
+                                "Dropbox SDK",
+                                "Json Data"
     ]
     
     var objectDesc: [String] = ["기본 Viewd에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
@@ -33,7 +34,8 @@ class HomeViewController: UITableViewController {
                                 "여러가지 Web View",
                                 "이미지 다루기",
                                 "UIGravityBehavior 등의 다아나믹한 애니메이션 구현",
-                                "swiftyDropbox"
+                                "swiftyDropbox",
+                                "JSon 데이터 다루기"
     ]
     
     override func viewDidLoad() {
@@ -93,6 +95,8 @@ class HomeViewController: UITableViewController {
             self.performSegueWithIdentifier("goGravityList", sender: self)
         case 10:
             self.performSegueWithIdentifier("goDropboxList", sender: self)
+        case 11:
+            self.performSegueWithIdentifier("goJsonList", sender: self)
         default:
             print("#\(indexPath.row)")
             return

@@ -6,7 +6,6 @@
 //  Copyright © 2016년 ngle. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // Main.storyboard에서 Table View를 View Controller에 dataSource, delegate를 Outlets로 연결한다.
@@ -31,17 +30,13 @@ class JsonTable2Controller: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func getJsonFile(fileName: String)
-    {
-        if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json")
-        {
-            do
-            {
+    func getJsonFile(fileName: String) {
+        if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json") {
+            do {
                 let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
                 do {
                     let theJSON = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! NSMutableDictionary
-                    if theJSON.count > 0
-                    {
+                    if theJSON.count > 0 {
                         let results: NSArray = theJSON["data"]!["children"] as! NSArray
                         dispatch_async(dispatch_get_main_queue(), {
                             self.tableData = results
