@@ -14,12 +14,14 @@ class TableViewTableController: UITableViewController
     
     var tableList: [String] = ["Json table view 1",
                                "Json table view 2",
-                               "Table Swipe 2"
+                               "Table Swipe 2",
+                               "Table Index List"
     ]
     
     var tableDesc: [String] = ["웹 연결 (http://www.reddit.com/.json)",
                                "Json 파일로 테이블 구성 ",
-                               "테이블 셀을 밀어 버튼 노출"
+                               "테이블 셀을 밀어 버튼 노출",
+                               "테이블 왼쪽 인덱스 리스트"
         
     ]
     
@@ -63,6 +65,8 @@ class TableViewTableController: UITableViewController
             self.performSegueWithIdentifier("goJsonTable2", sender: self)
         case 2:
             self.performSegueWithIdentifier("goTableSwipe2", sender: self)
+        case 3:
+            self.performSegueWithIdentifier("goTableIndexList", sender: self)
         default:
             print("#\(indexPath.row)")
             return

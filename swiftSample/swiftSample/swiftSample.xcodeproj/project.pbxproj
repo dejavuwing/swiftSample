@@ -68,6 +68,7 @@
 		E3AE89AE1D24F11A000AF808 /* bgSample2.png in Resources */ = {isa = PBXBuildFile; fileRef = E3AE89AB1D24F11A000AF808 /* bgSample2.png */; };
 		E3AE89B01D24F29B000AF808 /* ActivityModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */; };
 		E3B514D71D4B2AAF0001C0E9 /* JakeFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B514D61D4B2AAF0001C0E9 /* JakeFileManager.swift */; };
+		E3B514D91D4F4CF30001C0E9 /* TableIndexListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B514D81D4F4CF30001C0E9 /* TableIndexListController.swift */; };
 		E3BD46EC1D4A365F0063A516 /* Word-List-7.json in Resources */ = {isa = PBXBuildFile; fileRef = E3BD46EB1D4A365F0063A516 /* Word-List-7.json */; };
 		E3BD46EF1D4AE4060063A516 /* JsonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD46EE1D4AE4060063A516 /* JsonTableController.swift */; };
 		E3BD46F11D4B1B490063A516 /* DefaultJsonTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD46F01D4B1B490063A516 /* DefaultJsonTableController.swift */; };
@@ -139,6 +140,7 @@
 		E3AE89AB1D24F11A000AF808 /* bgSample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgSample2.png; sourceTree = "<group>"; };
 		E3AE89AF1D24F29B000AF808 /* ActivityModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityModalView.swift; path = ../ActivityModalView.swift; sourceTree = "<group>"; };
 		E3B514D61D4B2AAF0001C0E9 /* JakeFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JakeFileManager.swift; sourceTree = "<group>"; };
+		E3B514D81D4F4CF30001C0E9 /* TableIndexListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableIndexListController.swift; sourceTree = "<group>"; };
 		E3BD46EB1D4A365F0063A516 /* Word-List-7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Word-List-7.json"; sourceTree = "<group>"; };
 		E3BD46EE1D4AE4060063A516 /* JsonTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTableController.swift; sourceTree = "<group>"; };
 		E3BD46F01D4B1B490063A516 /* DefaultJsonTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultJsonTableController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				E32901751D2BA15E007BCA10 /* JsonTable1Controller.swift */,
 				E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */,
 				E329018B1D35CDDC007BCA10 /* TableSwipe2Controller.swift */,
+				E3B514D81D4F4CF30001C0E9 /* TableIndexListController.swift */,
 				E32901891D3495AA007BCA10 /* reddit.json */,
 			);
 			name = TableView;
@@ -531,6 +534,7 @@
 				E33C29731D24D41D00FD6A10 /* ObjectViewResultcontroller.swift in Sources */,
 				E32901741D2B9FC3007BCA10 /* TableViewTableController.swift in Sources */,
 				E39402291D3F0840008E63D1 /* GravityAlertViewController.swift in Sources */,
+				E3B514D91D4F4CF30001C0E9 /* TableIndexListController.swift in Sources */,
 				E329019D1D3C6118007BCA10 /* AttachViewController.swift in Sources */,
 				E33C295E1D24C07300FD6A10 /* HomeViewController.swift in Sources */,
 				E33C29751D24D8AF00FD6A10 /* ObjectTableController.swift in Sources */,

@@ -663,6 +663,7 @@
                         <segue destination="NpY-Ch-M8e" kind="show" identifier="goJsonTable1" id="Glp-36-QVF"/>
                         <segue destination="uUm-aT-wbe" kind="show" identifier="goJsonTable2" id="aE4-7n-jxZ"/>
                         <segue destination="Xf3-Jv-9r9" kind="show" identifier="goTableSwipe2" id="NWj-Mb-VEz"/>
+                        <segue destination="Zdf-kQ-AAw" kind="show" identifier="goTableIndexList" id="Kfw-0n-0SF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fR-3F-GS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -917,6 +918,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfu-Hz-gvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2618" y="442"/>
+        </scene>
+        <!--Table Index List Controller-->
+        <scene sceneID="wK4-yJ-GlM">
+            <objects>
+                <tableViewController id="Zdf-kQ-AAw" customClass="TableIndexListController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x4N-Ee-7gx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myWordList" id="JyR-rX-56u">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JyR-rX-56u" id="gY4-GB-b59">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Zdf-kQ-AAw" id="vb7-3R-S8L"/>
+                            <outlet property="delegate" destination="Zdf-kQ-AAw" id="vA9-Ye-Wuy"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="jsonTableView" destination="x4N-Ee-7gx" id="iz7-4T-lKW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QR-tD-Shv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954" y="478"/>
         </scene>
         <!--Object View Controller-->
         <scene sceneID="I62-wT-e4l">
