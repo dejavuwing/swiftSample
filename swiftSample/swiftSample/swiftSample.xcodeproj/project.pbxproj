@@ -40,6 +40,7 @@
 		E33C29771D24D9B100FD6A10 /* AlertTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C29761D24D9B100FD6A10 /* AlertTableController.swift */; };
 		E3651B1A1D471690005513B0 /* DropboxFileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3651B191D471690005513B0 /* DropboxFileEditController.swift */; };
 		E3651B1C1D486833005513B0 /* DropboxDownloadProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3651B1B1D486833005513B0 /* DropboxDownloadProgressController.swift */; };
+		E370FEDC1D51A22B0080D81C /* TableSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E370FEDB1D51A22B0080D81C /* TableSearchViewController.swift */; };
 		E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */; };
 		E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */; };
 		E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */; };
@@ -112,6 +113,7 @@
 		E33C29761D24D9B100FD6A10 /* AlertTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertTableController.swift; path = ../AlertTableController.swift; sourceTree = "<group>"; };
 		E3651B191D471690005513B0 /* DropboxFileEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxFileEditController.swift; sourceTree = "<group>"; };
 		E3651B1B1D486833005513B0 /* DropboxDownloadProgressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxDownloadProgressController.swift; sourceTree = "<group>"; };
+		E370FEDB1D51A22B0080D81C /* TableSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSearchViewController.swift; sourceTree = "<group>"; };
 		E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTableController.swift; path = ../PickerTableController.swift; sourceTree = "<group>"; };
 		E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultPickerViewController.swift; path = ../DefaultPickerViewController.swift; sourceTree = "<group>"; };
 		E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PizzaPickerViewController.swift; path = ../PizzaPickerViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				E32901771D2BB134007BCA10 /* JsonTable2Controller.swift */,
 				E329018B1D35CDDC007BCA10 /* TableSwipe2Controller.swift */,
 				E3B514D81D4F4CF30001C0E9 /* TableIndexListController.swift */,
+				E370FEDB1D51A22B0080D81C /* TableSearchViewController.swift */,
 				E32901891D3495AA007BCA10 /* reddit.json */,
 			);
 			name = TableView;
@@ -517,6 +520,7 @@
 				E32901881D2D02ED007BCA10 /* NavigationWebViewController.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
 				E329018C1D35CDDC007BCA10 /* TableSwipe2Controller.swift in Sources */,
+				E370FEDC1D51A22B0080D81C /* TableSearchViewController.swift in Sources */,
 				E3AE89A31D24E177000AF808 /* ActivityIndicatorViewController1.swift in Sources */,
 				E32901781D2BB134007BCA10 /* JsonTable2Controller.swift in Sources */,
 				E33C29641D24C07300FD6A10 /* swiftSample.xcdatamodeld in Sources */,
