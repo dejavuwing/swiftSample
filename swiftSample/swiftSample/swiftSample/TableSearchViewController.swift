@@ -8,18 +8,33 @@
 
 import UIKit
 
+// 단어 저장을 위한 타입을 만든다.
+protocol jakesWord {
+    var word: String {get set}
+    var means_ko: String {get set}
+    var means_en: String {get set}
+}
+
+struct wordEl: jakesWord {
+    var word: String
+    var means_ko: String
+    var means_en: String
+}
+
 class TableSearchViewController: UITableViewController {
     
     @IBOutlet var jsonTableView: UITableView!
     
     var tableData = []
-    var sections = [String: [String]]()
+    var sections = [String: [jakesWord]]()
     var sectionCount: Int = 0
     var words = [String]()
     
+    var wordList = [jakesWord]()
+    
     // 테이블 검색을 위해
     let searchController = UISearchController(searchResultsController: nil)
-    var filteredWords = [String]()
+    var filteredWords = [jakesWord]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +60,8 @@ class TableSearchViewController: UITableViewController {
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
-        filteredWords = words.filter({ word in
-            return word.lowercaseString.containsString(searchText.lowercaseString)
+        filteredWords = wordList.filter({ word in
+            return word.word.lowercaseString.containsString(searchText.lowercaseString)
         })
         self.jsonTableView.reloadData()
     }
@@ -86,22 +101,24 @@ class TableSearchViewController: UITableViewController {
         networkTask.resume()
     }
     
-    func alphabetizeArray(JsonData: NSMutableDictionary) -> [String: [String]] {
-        var result = [String: [String]]()
+    func alphabetizeArray(JsonData: NSMutableDictionary) -> [String: [jakesWord]] {
+        var result = [String: [jakesWord]]()
         
         // Json 데이터에서 word를 [String] 으로 뺀다.
         if let voca = JsonData["voca"] as? [[String: AnyObject]] {
-            // 전체 단어들만 리스트로 담아놓는다.
+            
             for word in voca {
-                if let word = word["word"] as? String {
-                    words.append(word)
+                if let word: jakesWord = wordEl(word: (word["word"] as? String)!, means_ko: (word["means_ko"] as? String)!, means_en: (word["means_en"] as? String)!) {
+                    // print("\(wordList.word) : \(wordList.means_ko) : \(wordList.means_en)")
+                    wordList.append(word)
+                    
                 }
             }
         }
         
-        for item in words {
-            let index = item.startIndex.advancedBy(1)
-            let firstLetter = item.substringToIndex(index).uppercaseString
+        for item in wordList {
+            let index = item.word.startIndex.advancedBy(1)
+            let firstLetter = item.word.substringToIndex(index).uppercaseString
             
             if result[firstLetter] != nil {
                 result[firstLetter]!.append(item)
@@ -112,7 +129,7 @@ class TableSearchViewController: UITableViewController {
         
         for (key, value) in result {
             result[key] = value.sort({ (a, b) -> Bool in
-                a.lowercaseString < b.lowercaseString
+                a.word.lowercaseString < b.word.lowercaseString
             })
         }
         
@@ -120,7 +137,7 @@ class TableSearchViewController: UITableViewController {
     }
     
     // key를 정렬해 반환한다.
-    func getSortedKeys(sections: [String: [String]]) -> [String] {
+    func getSortedKeys(sections: [String: [jakesWord]]) -> [String] {
         let keys = sections.keys
         let sortedKeys = keys.sort({ (a, b) -> Bool in
             a.lowercaseString < b.lowercaseString
@@ -180,13 +197,13 @@ class TableSearchViewController: UITableViewController {
         // 검색한 단어를 cell에 전달
         if searchController.active && searchController.searchBar.text != "" {
             let word = filteredWords[indexPath.row]
-            cell.textLabel?.text = word
+            cell.textLabel?.text = word.word
         } else {
             let keys = getSortedKeys(sections)
             let key = keys[indexPath.section]
             if let words = sections[key] {
                 let word = words[indexPath.row]
-                cell.textLabel?.text = word
+                cell.textLabel?.text = word.word
             }
         }
         
@@ -230,15 +247,38 @@ class TableSearchViewController: UITableViewController {
         
         // 단어를 검색한다면 Section을 보여주지 않는다
         if searchController.active && searchController.searchBar.text != "" {
-            
-            
             print("did Select Row At IndexPath: \(filteredWords[indexPath.row])")
+            performSegueWithIdentifier("goMeaningView", sender: self)
             
         } else {
             let key = keys[indexPath.section]
             if let words = sections[key] {
                 print("did Select Row At IndexPath: \(words[indexPath.row])")
+                performSegueWithIdentifier("goMeaningView", sender: self)
             }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var selectedWord: jakesWord!
+        let keys = sections.keys.sort({ (a, b) -> Bool in
+            a.lowercaseString < b.lowercaseString
+        })
+        
+        if (segue.identifier == "goMeaningView") {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                if searchController.active && searchController.searchBar.text != "" {
+                    selectedWord = filteredWords[indexPath.row]
+                } else {
+                    let key = keys[indexPath.section]
+                    if let words = sections[key] {
+                        selectedWord = words[indexPath.row]
+                    }
+                }
+            }
+            let controller = segue.destinationViewController as? MeaningViewController
+            controller!.selectedWord = selectedWord
         }
     }
 

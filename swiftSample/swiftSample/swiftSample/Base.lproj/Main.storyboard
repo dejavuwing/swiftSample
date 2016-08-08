@@ -976,11 +976,59 @@
                     </tableView>
                     <connections>
                         <outlet property="jsonTableView" destination="g4o-Hw-ahY" id="SoP-Jb-rzW"/>
+                        <segue destination="HR5-Fp-T5v" kind="show" identifier="goMeaningView" id="cv0-PH-x0k"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yya-fA-Upv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3290" y="493"/>
+        </scene>
+        <!--Meaning View Controller-->
+        <scene sceneID="MMt-NY-oai">
+            <objects>
+                <viewController id="HR5-Fp-T5v" customClass="MeaningViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ciy-5q-2S6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Th5-f7-reU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VM0-hv-UN6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPJ-IK-xhl">
+                                <rect key="frame" x="20" y="72" width="560" height="62"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hRF-I0-3CY">
+                                <rect key="frame" x="20" y="142" width="560" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hRF-I0-3CY" firstAttribute="top" secondItem="aPJ-IK-xhl" secondAttribute="bottom" constant="8" id="1gK-eD-6ct"/>
+                            <constraint firstItem="hRF-I0-3CY" firstAttribute="leading" secondItem="VM0-hv-UN6" secondAttribute="leadingMargin" id="3TW-ds-OXQ"/>
+                            <constraint firstItem="aPJ-IK-xhl" firstAttribute="leading" secondItem="VM0-hv-UN6" secondAttribute="leadingMargin" id="7re-Ga-ATi"/>
+                            <constraint firstAttribute="bottom" secondItem="hRF-I0-3CY" secondAttribute="bottom" constant="20" symbolic="YES" id="IBz-Ya-Oxy"/>
+                            <constraint firstItem="aPJ-IK-xhl" firstAttribute="top" secondItem="Ciy-5q-2S6" secondAttribute="bottom" constant="8" symbolic="YES" id="Swb-I7-qW3"/>
+                            <constraint firstItem="hRF-I0-3CY" firstAttribute="trailing" secondItem="VM0-hv-UN6" secondAttribute="trailingMargin" id="U1x-jb-xpa"/>
+                            <constraint firstItem="aPJ-IK-xhl" firstAttribute="trailing" secondItem="VM0-hv-UN6" secondAttribute="trailingMargin" id="fJV-Xe-weS"/>
+                            <constraint firstItem="Th5-f7-reU" firstAttribute="top" secondItem="aPJ-IK-xhl" secondAttribute="bottom" constant="466" id="xr2-5S-vfV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="meanTextView" destination="hRF-I0-3CY" id="5HZ-kp-MbI"/>
+                        <outlet property="wordLabel" destination="aPJ-IK-xhl" id="cEC-5A-vaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3X-eW-j5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3296" y="1248"/>
         </scene>
         <!--Object View Controller-->
         <scene sceneID="I62-wT-e4l">
