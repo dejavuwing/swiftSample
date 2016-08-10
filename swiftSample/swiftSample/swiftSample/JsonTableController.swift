@@ -10,9 +10,13 @@ import UIKit
 
 class JsonTableController: UITableViewController {
     
-    var tableList: [String] = ["default Json Table"]
+    var tableList: [String] = ["default Json Table",
+                               "Plist Manager"
+    ]
     
-    var tableDesc: [String] = ["json 데이터를 이용한 기본 테이블 뷰"]
+    var tableDesc: [String] = ["json 데이터를 이용한 기본 테이블 뷰",
+                               "Plist 파일 다루기"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +51,8 @@ class JsonTableController: UITableViewController {
         switch (indexPath.row) {
         case 0:
             self.performSegueWithIdentifier("goDefaultJsomTableController", sender: self)
+        case 1:
+            self.performSegueWithIdentifier("goPlistManager", sender: self)
         default:
             print("#\(indexPath.row)")
             return

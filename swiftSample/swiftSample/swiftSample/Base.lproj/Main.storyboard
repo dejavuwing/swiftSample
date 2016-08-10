@@ -251,6 +251,7 @@
                     <connections>
                         <segue destination="JTi-pJ-aEp" kind="show" identifier="goImageSideView" id="064-1s-SEB"/>
                         <segue destination="K6K-Sw-1Z4" kind="show" identifier="goProgressBar" id="OuS-zB-q5K"/>
+                        <segue destination="ZgR-nu-gR2" kind="show" identifier="goPageViewController2" id="inH-bF-Z35"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pwn-EI-Qt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -323,12 +324,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7v-5Z-0E9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1202" y="5998"/>
+            <point key="canvasLocation" x="-1824" y="6084"/>
+        </scene>
+        <!--Page View Controller3-->
+        <scene sceneID="Zh5-LR-Jfk">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZgR-nu-gR2" customClass="PageViewController3" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N5B-Re-Xoo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1011" y="6064"/>
         </scene>
         <!--Children View Controller-->
         <scene sceneID="OQU-1N-4Dc">
             <objects>
-                <viewController id="JTi-pJ-aEp" customClass="ChildrenViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChildrenViewController" id="JTi-pJ-aEp" customClass="ChildrenViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="US9-xB-Rnt"/>
                         <viewControllerLayoutGuide type="bottom" id="zS2-Bw-Oee"/>
@@ -349,7 +358,7 @@
                 <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dyx-We-aiN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC2-Kg-tho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-122" y="6139"/>
+            <point key="canvasLocation" x="-340" y="6125"/>
         </scene>
         <!--Page Content View Controller-->
         <scene sceneID="OQZ-E0-oa8">
@@ -390,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrb-xR-MXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="6276"/>
+            <point key="canvasLocation" x="-202" y="6248"/>
         </scene>
         <!--Image Picker Table Controller-->
         <scene sceneID="r1z-W7-kCr">
@@ -423,6 +432,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bi-ds-Vg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-48" y="2704"/>
+        </scene>
+        <!--Plist Manage View Controller-->
+        <scene sceneID="xA7-Bp-cxc">
+            <objects>
+                <viewController id="28k-Sg-vRT" customClass="PlistManageViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="etE-50-oCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="twd-t4-m57"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Fd-ph-g0g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5f-22-DgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1552" y="180"/>
         </scene>
         <!--Default Json Table Controller-->
         <scene sceneID="i95-aQ-jfz">
@@ -480,6 +507,7 @@
                     </tableView>
                     <connections>
                         <segue destination="2ZK-x3-6qY" kind="show" identifier="goDefaultJsomTableController" id="pcY-Pn-L5e"/>
+                        <segue destination="28k-Sg-vRT" kind="show" identifier="goPlistManager" id="JSb-FG-IdY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9s-GD-3Am" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1033,7 +1061,7 @@
         <!--Object View Controller-->
         <scene sceneID="I62-wT-e4l">
             <objects>
-                <viewController id="TIH-zK-DzU" customClass="ObjectViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ObjectViewController" id="TIH-zK-DzU" customClass="ObjectViewController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BQK-dW-xjE"/>
                         <viewControllerLayoutGuide type="bottom" id="peR-iK-PKP"/>
@@ -1170,7 +1198,7 @@
         <!--Object Table Controller-->
         <scene sceneID="IrX-UJ-x0n">
             <objects>
-                <tableViewController id="3gk-Cp-0nz" customClass="ObjectTableController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ObjectTableViewController" id="3gk-Cp-0nz" customClass="ObjectTableController" customModule="swiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="58k-gV-W6v">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

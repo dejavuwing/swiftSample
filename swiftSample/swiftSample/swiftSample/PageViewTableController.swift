@@ -11,10 +11,12 @@ import UIKit
 class PageViewTableController: UITableViewController {
     
     var tableList: [String] = ["Image Slide View",
+                               "Page View Controller 3",
                                "Progress Bar"
     ]
     
     var tableDesc: [String] = ["이미지 슬라이드해서 보기",
+                               "ViewController를 불러서 페이지 뷰로 연다. (지니 테스트 앱처럼)",
                                "프로그래스 바 보기"
     ]
     
@@ -55,6 +57,8 @@ class PageViewTableController: UITableViewController {
         case 0:
             self.performSegueWithIdentifier("goImageSideView", sender: self)
         case 1:
+            self.performSegueWithIdentifier("goPageViewController2", sender: self)
+        case 2:
             self.performSegueWithIdentifier("goProgressBar", sender: self)
         default:
             print("#\(indexPath.row)")

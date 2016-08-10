@@ -18,10 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        PlistManager.sharedInstance.startPlistManager()
         
         // swiftyDropbox SDK auth
         // DropboxAuthManager.sharedAuthManager = DropboxAuthManager(appKey: "cpazgljzaw6xppu")
         Dropbox.setupWithAppKey("cpazgljzaw6xppu")
+        
+        //
         
         return true
     }

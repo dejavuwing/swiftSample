@@ -42,6 +42,10 @@
 		E3651B1C1D486833005513B0 /* DropboxDownloadProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3651B1B1D486833005513B0 /* DropboxDownloadProgressController.swift */; };
 		E370FEDC1D51A22B0080D81C /* TableSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E370FEDB1D51A22B0080D81C /* TableSearchViewController.swift */; };
 		E370FEDE1D544DBF0080D81C /* MeaningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E370FEDD1D544DBF0080D81C /* MeaningViewController.swift */; };
+		E370FEE01D598C600080D81C /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E370FEDF1D598C600080D81C /* PlistManager.swift */; };
+		E370FEE21D598C830080D81C /* MyData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E370FEE11D598C830080D81C /* MyData.plist */; };
+		E370FEE41D598EFC0080D81C /* PlistManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E370FEE31D598EFC0080D81C /* PlistManageViewController.swift */; };
+		E370FEE61D5AF7370080D81C /* PageViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E370FEE51D5AF7370080D81C /* PageViewController3.swift */; };
 		E39122AB1D2A0B2B00F436F7 /* PickerTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */; };
 		E39122AD1D2A254600F436F7 /* DefaultPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */; };
 		E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */; };
@@ -116,6 +120,10 @@
 		E3651B1B1D486833005513B0 /* DropboxDownloadProgressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxDownloadProgressController.swift; sourceTree = "<group>"; };
 		E370FEDB1D51A22B0080D81C /* TableSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSearchViewController.swift; sourceTree = "<group>"; };
 		E370FEDD1D544DBF0080D81C /* MeaningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningViewController.swift; sourceTree = "<group>"; };
+		E370FEDF1D598C600080D81C /* PlistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
+		E370FEE11D598C830080D81C /* MyData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyData.plist; sourceTree = "<group>"; };
+		E370FEE31D598EFC0080D81C /* PlistManageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistManageViewController.swift; sourceTree = "<group>"; };
+		E370FEE51D5AF7370080D81C /* PageViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController3.swift; sourceTree = "<group>"; };
 		E39122AA1D2A0B2B00F436F7 /* PickerTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerTableController.swift; path = ../PickerTableController.swift; sourceTree = "<group>"; };
 		E39122AC1D2A254600F436F7 /* DefaultPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultPickerViewController.swift; path = ../DefaultPickerViewController.swift; sourceTree = "<group>"; };
 		E39122AE1D2A567300F436F7 /* PizzaPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PizzaPickerViewController.swift; path = ../PizzaPickerViewController.swift; sourceTree = "<group>"; };
@@ -316,6 +324,7 @@
 				E39402441D462862008E63D1 /* ChildrenViewController.swift */,
 				E39402461D4638E2008E63D1 /* PageContentViewController.swift */,
 				E3D96ADD1D48B49E00F2C73F /* ProgressBarController.swift */,
+				E370FEE51D5AF7370080D81C /* PageViewController3.swift */,
 			);
 			name = PageView;
 			sourceTree = "<group>";
@@ -366,6 +375,9 @@
 				E3B514D61D4B2AAF0001C0E9 /* JakeFileManager.swift */,
 				E3BD46EE1D4AE4060063A516 /* JsonTableController.swift */,
 				E3BD46F01D4B1B490063A516 /* DefaultJsonTableController.swift */,
+				E370FEE31D598EFC0080D81C /* PlistManageViewController.swift */,
+				E370FEDF1D598C600080D81C /* PlistManager.swift */,
+				E370FEE11D598C830080D81C /* MyData.plist */,
 			);
 			name = JsonView;
 			sourceTree = "<group>";
@@ -448,6 +460,7 @@
 				E394023F1D461BBB008E63D1 /* 20151024_120507.jpg in Resources */,
 				E329018A1D3495AA007BCA10 /* reddit.json in Resources */,
 				E3BD46EC1D4A365F0063A516 /* Word-List-7.json in Resources */,
+				E370FEE21D598C830080D81C /* MyData.plist in Resources */,
 				E33C29691D24C07300FD6A10 /* LaunchScreen.storyboard in Resources */,
 				E33C29661D24C07300FD6A10 /* Assets.xcassets in Resources */,
 				E3AE89AC1D24F11A000AF808 /* bgSample4.jpeg in Resources */,
@@ -515,12 +528,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E370FEE61D5AF7370080D81C /* PageViewController3.swift in Sources */,
 				E39122B31D2A823100F436F7 /* DefaultDatePickerViewController.swift in Sources */,
 				E329017E1D2C9754007BCA10 /* ActivityModalView1.swift in Sources */,
 				E329019B1D38E9E9007BCA10 /* SnapViewController.swift in Sources */,
 				E39402471D4638E2008E63D1 /* PageContentViewController.swift in Sources */,
 				E3D96ADE1D48B49E00F2C73F /* ProgressBarController.swift in Sources */,
 				E32901881D2D02ED007BCA10 /* NavigationWebViewController.swift in Sources */,
+				E370FEE01D598C600080D81C /* PlistManager.swift in Sources */,
 				E3AE89A51D24EBCE000AF808 /* ActivityIndicatorViewController2.swift in Sources */,
 				E329018C1D35CDDC007BCA10 /* TableSwipe2Controller.swift in Sources */,
 				E370FEDE1D544DBF0080D81C /* MeaningViewController.swift in Sources */,
@@ -532,6 +547,7 @@
 				E3BD46EF1D4AE4060063A516 /* JsonTableController.swift in Sources */,
 				E32901971D38D02A007BCA10 /* GravityTableController.swift in Sources */,
 				E39122B51D2A89A800F436F7 /* DeliveryDatePickerViewController.swift in Sources */,
+				E370FEE41D598EFC0080D81C /* PlistManageViewController.swift in Sources */,
 				E39122AF1D2A567300F436F7 /* PizzaPickerViewController.swift in Sources */,
 				E3AE89A11D24DE44000AF808 /* ActivityTableController.swift in Sources */,
 				E329019F1D3C990F007BCA10 /* PushViewController.swift in Sources */,
