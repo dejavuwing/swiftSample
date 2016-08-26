@@ -2,14 +2,17 @@ PODS:
   - Alamofire (3.3.1)
   - SwiftyDropbox (3.1.0):
     - Alamofire (~> 3.3.1)
+  - YouTubePlayer (0.3.0)
 
 DEPENDENCIES:
   - SwiftyDropbox
+  - YouTubePlayer
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   SwiftyDropbox: 30ef3a666c9c9aabd23e6c421b9c3d5b9b335a62
+  YouTubePlayer: 88713a96c356f2c88da8925eb61438eda88bcd57
 
-PODFILE CHECKSUM: 3588f2d821aeb1e1543ca719bf4cf99485d47583
+PODFILE CHECKSUM: 0f759df3ff2869078ccd8752b2f587c4d7945810
 
 COCOAPODS: 1.0.1

@@ -21,7 +21,8 @@ class HomeViewController: UITableViewController {
                                 "Image Picker",
                                 "Gravity and Collision",
                                 "Dropbox SDK",
-                                "Json Data"
+                                "Json Data",
+                                "YouTube Sample"
     ]
     
     var objectDesc: [String] = ["기본 Viewd에서 Segmented Control, Slider, Switch 등의 처리 및 데이터 이동",
@@ -35,7 +36,8 @@ class HomeViewController: UITableViewController {
                                 "이미지 다루기",
                                 "UIGravityBehavior 등의 다아나믹한 애니메이션 구현",
                                 "swiftyDropbox",
-                                "JSon 데이터 다루기"
+                                "JSon 데이터 다루기",
+                                "YouTube 체널과 비디오 보기"
     ]
     
     override func viewDidLoad() {
@@ -97,6 +99,8 @@ class HomeViewController: UITableViewController {
             self.performSegueWithIdentifier("goDropboxList", sender: self)
         case 11:
             self.performSegueWithIdentifier("goJsonList", sender: self)
+        case 12:
+            self.performSegueWithIdentifier("goYoutube1", sender: self)
         default:
             print("#\(indexPath.row)")
             return

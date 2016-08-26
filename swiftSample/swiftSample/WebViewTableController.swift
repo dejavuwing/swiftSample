@@ -16,9 +16,9 @@ class WebViewTableController: UITableViewController
                                  "웹 뷰 네이게이션"
     ]
     
-    var webViewDesc: [String] = ["웹 불러오기 (기본)",
+    var webViewDesc: [String] = ["웹 불러오기 (기본): goBack, goForward, reload, stopLoading",
                                  "내부 home.html  파일 웹 뷰 구형",
-                                 "goBack, goForward, reload, stopLoading"
+                                 "땡겨서 refresh"
     ]
     
     override func viewDidLoad() {
